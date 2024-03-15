@@ -1,0 +1,38 @@
+.button {
+  display: inline-flex;
+  padding: 24px 42px;
+  justify-content: center;
+  word-break: break-word;
+  outline-offset: 3px;
+  text-decoration: none;
+  color: $color-default-white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+
+  transition: opacity 0.3s ease;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  &:focus {
+    border: $border-black;
+    color: $color-egyptian-blue;
+    background-color: rgba(255, 255, 255, 0.80);
+    outline: none;
+  }
+
+  &:active {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+    border: 2px solid $color-default-white;
+  }
+}
