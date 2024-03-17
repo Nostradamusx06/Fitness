@@ -6,19 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness</title>
   <link rel="preload" href="fonts/AlumniSans-VariableFont_wght.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous" />
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-VariableFont_wght.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous" />
+    crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page-body">
-  <div data-test="hero" class="hero">
+  <div class="hero" data-test="hero">
     <header class="header">
       <div class="header__wrapper container">
         <p class="header__logo">
           <picture>
-            <source type="image/webp" media="(min-width:1440px)" srcset="img/logo/logo-desktop.svg" width="130"
+            <source type="image/webp" media="(min-width:1336px)" srcset="img/logo/logo-desktop.svg" width="130"
               height="26">
             <source type="image/webp" media="(min-width:768px)" srcset="img/logo/logo-tablet.svg" width="110"
               height="22">
@@ -43,7 +43,7 @@
               <li class="main__list-item">Групповые занятия</li>
               <li class="main__list-item">Кардио-зона</li>
             </ul>
-            <h1 class="main__list-header">Фитнес<br />
+            <h1 class="main__list-header">Фитнес<br>
               <span class="main__list-span">центр</span>
             </h1>
           </div>
@@ -54,16 +54,77 @@
         <p class="main__picture">
           <picture>
             <source type="image/webp" srcset="img/hero/hero@1x.webp 1x, img/hero/hero@2x.webp 2x" width="500"
-              height="524" />
-            <img class="main__img" src="img/hero/hero@1x.jpg" srcset="img/hero/hero@2x.jpg 2x" width="500" height="524" loading="lazy"
-              alt="Портрет мужчины" />
+              height="524">
+            <img class="main__img" src="img/hero/hero@1x.jpg" srcset="img/hero/hero@2x.jpg 2x" width="500" height="524"
+              loading="lazy" alt="Портрет мужчины">
           </picture>
         </p>
       </div>
     </section>
   </div>
 
+  <main>
+    <section class="gym" data-test="about">
+      <div class="gym__wrapper container">
+        <div class="gym__content">
+          <h2 class="gym__header">Тренажёрный зал</h2>
+          <p class="gym__description">Просторный зал площадью 900&nbsp;кв/м</p>
+          <div class="gym__text">
+            <p>
+              Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом
+              и&nbsp;идеальное место для укрепления тела
+              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+              современным оборудованием для&nbsp;всех спортсменов.
+            </p>
+            <p>
+              В&nbsp;зале расположены отдельная зона для Crossfit
+              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов<br>
+              для различных видов групповых занятий.
+            </p>
+          </div>
+        </div>
 
+        <p class="gym__content-picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" width="678" height="345"
+              srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" width="320" height="280"
+              srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
+
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
+            <img class="gym__img" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320"
+              height="280" alt="Тренажерный зал" loading="lazy">
+          </picture>
+        </p>
+
+        <div class="video">
+          <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+            <picture>
+              <source type="image/webp"
+                srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x">
+
+              <img class="video__media" srcset="img/gym/video/video-mobile@2x.jpg 2x"
+                src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
+                alt="Видео спортивного зала" loading="lazy">
+            </picture>
+          </a>
+          <button class="video__button" type="button" aria-label="Запустить видео">
+            <svg class="video__button-img" width="100" height="100" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle class="video__button-border" opacity="0.2" cx="50" cy="50" r="49" stroke="#ED0233"
+                stroke-width="2" />
+              <path class="video__button-center" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script type="module" src="js/video.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

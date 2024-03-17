@@ -8,6 +8,7 @@ $color-ghost-white: #f8f9fc;
 $color-red: #ed0233;
 $color-black-russian: #030a1a;
 $color-torch-red: #ff121f;
+$color-link-water: #c8c9cc;
 
 // Default color
 
@@ -19,7 +20,7 @@ $color-transparent: rgba(255, 255, 255, 0);
 
 $main-gradient: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 $extra-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-$button-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+$button-gradient: linear-gradient(270deg, #ed0233 0%, #003eb7 100%);
 
 // Typography
 
@@ -28,7 +29,6 @@ $regular: 400;
 $semi-bold: 600;
 $bold: 700;
 $extra-bold: 800;
-
 $roboto: "Roboto Condensed", "Arial", sans-serif;
 $alumni: "Alumni Sans", "Arial", sans-serif;
 
