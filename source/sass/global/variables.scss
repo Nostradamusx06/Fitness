@@ -24,6 +24,7 @@ $main-gradient: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%
 $border-gradient: linear-gradient(142.51deg, #d10a42 0, #0041ca 87.33%) 1;
 $button-gradient: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
 $tub-button-gradient: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
+
 // Typography
 
 $light: 300;
@@ -31,6 +32,21 @@ $regular: 400;
 $semi-bold: 600;
 $bold: 700;
 $extra-bold: 800;
+
+$font-line-size-12: 12px;
+$font-line-size-14: 14px;
+$font-line-size-16: 16px;
+$font-line-size-18: 18px;
+$font-line-size-20: 20px;
+$font-line-size-22: 22px;
+$font-line-size-24: 24px;
+$font-line-size-26: 26px;
+$font-line-size-30: 30px;
+$font-line-size-32: 32px;
+$font-line-size-42: 42px;
+$font-line-size-54: 54px;
+$font-line-size-57: 57px;
+
 $roboto: "Roboto Condensed", "Arial", sans-serif;
 $alumni: "Alumni Sans", "Arial", sans-serif;
 

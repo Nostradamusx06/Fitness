@@ -14,7 +14,7 @@
   transition: opacity 0.3s ease;
 
   &:disabled {
-    opacity: 0.5;
+    opacity: .5;
     pointer-events: none;
   }
 

@@ -42,21 +42,21 @@
 .subscription__header {
   font-family: $alumni;
   text-align: center;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: $font-line-size-32;
+  line-height: $font-line-size-32;
   font-weight: 600;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    font-size: 42px;
-    line-height: 42px;
+    font-size: $font-line-size-42;
+    line-height: $font-line-size-42;
     margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 54px;
+    font-size: $font-line-size-54;
     font-weight: $semi-bold;
-    line-height: 54px;
+    line-height: $font-line-size-54;
     margin-bottom: 20px;
   }
 }
@@ -135,51 +135,55 @@
   }
 }
 
+.subscription__item--none {
+  display: none;
+}
+
 .subscription__item-header {
   margin: 0;
   margin-bottom: 18px;
   font-weight: $bold;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: $font-line-size-22;
+  line-height: $font-line-size-22;
 
   @media (min-width: $tablet-width) {
     padding-top: 2px;
     margin-bottom: 21px;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: $font-line-size-24;
+    line-height: $font-line-size-24;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 26px;
     margin-bottom: 17px;
-    font-size: 26px;
-    line-height: 26px;
+    font-size: $font-line-size-26;
+    line-height: $font-line-size-26;
   }
 }
 
 .subscription__item-description {
   margin: 0;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: $font-line-size-14;
+  line-height: $font-line-size-22;
   font-weight: $light;
   color: $color-sapphire;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $font-line-size-16;
+    line-height: $font-line-size-24;
   }
 }
 
 .subscription__item-link {
+  width: 189px;
+  padding: 25px 1px;
   font-weight: $bold;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: $font-line-size-12;
+  line-height: $font-line-size-12;
   border: 2px solid $color-sapphire;
-  width: 189px;
   cursor: pointer;
   color: $color-sapphire;
-  padding: 25px 1px;
 
   @media (min-width: $tablet-width) {
     width: 244px;

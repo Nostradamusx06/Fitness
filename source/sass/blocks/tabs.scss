@@ -24,31 +24,31 @@
 
 .tabs__button {
   position: relative;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: $regular;
   padding: 0;
   user-select: none;
   outline: none;
   cursor: pointer;
   border: none;
   background-color: transparent;
+  opacity: .5;
+  font-size: $font-line-size-16;
+  line-height: $font-line-size-16;
+  font-weight: $regular;
   color: $color-sapphire;
-  opacity: 0.5;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: $font-line-size-18;
+    line-height: $font-line-size-18;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: $font-line-size-20;
+    line-height: $font-line-size-20;
   }
 
   &:hover {
     color: $color-sapphire;
-    opacity: 0.7;
+    opacity: .7;
 
     &::after {
       content: "";
@@ -98,7 +98,7 @@
   }
 
   &:disabled {
-    opacity: 0.3;
+    opacity: .3;
     pointer-events: none;
 
     &::after {
@@ -110,7 +110,7 @@
       right: 2px;
       bottom: -19px;
       z-index: 1;
-      opacity: 0.3;
+      opacity: .3;
 
       @media (min-width: $tablet-width) {
         height: 2px;
