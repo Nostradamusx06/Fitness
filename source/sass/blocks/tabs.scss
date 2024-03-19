@@ -1,0 +1,117 @@
+.tabs__buttons {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 10px 0;
+  gap: 25px 46px;
+  justify-content: space-between;
+
+
+  @media (min-width: $tablet-width) {
+    column-gap: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 54px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  }
+}
+
+.tabs__button {
+  position: relative;
+  font-size: 16px;
+  font-weight: $light;
+  line-height: 24px;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: $color-sapphire;
+  opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    font-weight: $regular;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    color: $color-sapphire;
+    opacity: 0.7;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 2px;
+      background-color: $color-border-grey;
+      right: -1px;
+      bottom: -10px;
+      z-index: 1;
+    }
+  }
+
+  &:focus {
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 2px;
+      background-color: $color-sapphire;
+      right: -1px;
+      bottom: -10px;
+      z-index: 1;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 2px;
+      background-color: $color-sapphire;
+      right: -1px;
+      bottom: -10px;
+      z-index: 1;
+      opacity: 0.3;
+    }
+  }
+}
+
+.is-active {
+  opacity: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 2px;
+    background-color: $color-crimson;
+    right: -1px;
+    bottom: -12px;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      bottom: -14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -10px;
+    }
+  }
+}

@@ -106,8 +106,8 @@
                 srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x">
 
               <img class="video__media" srcset="img/gym/video/video-mobile@2x.jpg 2x"
-                src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170"
-                alt="Видео спортивного зала" loading="lazy">
+                src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" alt="Видео спортивного зала"
+                loading="lazy">
             </picture>
           </a>
           <button class="video__button" type="button" aria-label="Запустить видео">
@@ -121,9 +121,106 @@
         </div>
       </div>
     </section>
+
+    <section class="subscription" id="tickets"  data-test="price">
+      <h2 class="subscription__header">Абонементы</h2>
+      <div class="subscription__wrapper tabs">
+        <div class="tabs__buttons no-js">
+          <button class="tabs__button is-active" data-tab="1" type="button" aria-label="один месяц">
+            1 месяц
+          </button>
+          <button class="tabs__button" data-tab="2" type="button" aria-label="6 месяцев">
+            6 месяцев
+          </button>
+          <button class="tabs__button" data-tab="3" type="button" aria-label="12 месяцев">
+            12 месяцев
+          </button>
+        </div>
+
+        <div class="subscription__content">
+          <div class="subscription__content-wrapper" data-list="1">
+            <ul class="subscription__list">
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">С тренером</h4>
+                <p class="subscription__item-description">12 занятий</p>
+                <span class="subscription__min-text">5000</span>
+                <span class="subscription__max-text">5000</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">Дневной</h4>
+                <p class="subscription__item-description">с 8:00 до 17:00</p>
+                <span class="subscription__min-text">1700</span>
+                <span class="subscription__max-text">1700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">Полный день</h4>
+                <p class="subscription__item-description">с 8:00 до 22:00</p>
+                <span class="subscription__min-text">2700</span>
+                <span class="subscription__max-text">2700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subscription__content-wrapper" data-list="2">
+            <ul class="subscription__list">
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">С тренером</h4>
+                <p class="subscription__item-description">12 занятий</p>
+                <span class="subscription__min-text">7000</span>
+                <span class="subscription__max-text">7000</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">Дневной</h4>
+                <p class="subscription__item-description">с 8:00 до 17:00</p>
+                <span class="subscription__min-text">2700</span>
+                <span class="subscription__max-text">2700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">Полный день</h4>
+                <p class="subscription__item-description">с 8:00 до 22:00</p>
+                <span class="subscription__min-text">3700</span>
+                <span class="subscription__max-text">3700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subscription__content-wrapper" data-list="3">
+            <ul class="subscription__list">
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">С тренером</h4>
+                <p class="subscription__item-description">12 занятий</p>
+                <span class="subscription__min-text">9000</span>
+                <span class="subscription__max-text">9000</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">Дневной</h4>
+                <p class="subscription__item-description">с 8:00 до 17:00</p>
+                <span class="subscription__min-text">3700</span>
+                <span class="subscription__max-text">3700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item" tabindex="0">
+                <h4 class="subscription__item-header">Полный день</h4>
+                <p class="subscription__item-description">с 8:00 до 22:00</p>
+                <span class="subscription__min-text">4700</span>
+                <span class="subscription__max-text">4700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-
+  <script type="module" src="js/tabs.js"></script>
   <script type="module" src="js/video.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
