@@ -4,14 +4,16 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 10px 0;
-  gap: 25px 46px;
-  justify-content: space-between;
+  column-gap: 45px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.2);
 
 
   @media (min-width: $tablet-width) {
     column-gap: 46px;
     padding-bottom: 6px;
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
   }
 
   @media (min-width: $desktop-width) {
@@ -23,8 +25,8 @@
 .tabs__button {
   position: relative;
   font-size: 16px;
-  font-weight: $light;
-  line-height: 24px;
+  line-height: 16px;
+  font-weight: $regular;
   padding: 0;
   user-select: none;
   outline: none;
@@ -35,7 +37,6 @@
   opacity: 0.5;
 
   @media (min-width: $tablet-width) {
-    font-weight: $regular;
     font-size: 18px;
     line-height: 18px;
   }
@@ -53,13 +54,15 @@
       content: "";
       position: absolute;
       width: 105%;
-      height: 2px;
+      height: 1px;
       background-color: $color-border-grey;
-      right: -1px;
-      bottom: -10px;
+      right: 2px;
+      bottom: -19px;
       z-index: 1;
 
       @media (min-width: $tablet-width) {
+        height: 2px;
+        right: -1px;
         bottom: -8px;
       }
 
@@ -76,13 +79,15 @@
       content: "";
       position: absolute;
       width: 105%;
-      height: 2px;
+      height: 1px;
       background-color: $color-sapphire;
-      right: -1px;
-      bottom: -10px;
+      right: 2px;
+      bottom: -19px;
       z-index: 1;
 
       @media (min-width: $tablet-width) {
+        height: 2px;
+        right: -1px;
         bottom: -8px;
       }
 
@@ -100,14 +105,16 @@
       content: "";
       position: absolute;
       width: 105%;
-      height: 2px;
+      height: 1px;
       background-color: $color-sapphire;
-      right: -1px;
-      bottom: -10px;
+      right: 2px;
+      bottom: -19px;
       z-index: 1;
       opacity: 0.3;
 
       @media (min-width: $tablet-width) {
+        height: 2px;
+        right: -1px;
         bottom: -8px;
       }
 
@@ -125,13 +132,15 @@
     content: "";
     position: absolute;
     width: 105%;
-    height: 2px;
+    height: 1px;
     background-color: $color-crimson;
-    right: -1px;
-    bottom: -12px;
+    right: 2px;
+    bottom: -19px;
     z-index: 1;
 
     @media (min-width: $tablet-width) {
+      height: 2px;
+      right: -1px;
       bottom: -8px;
     }
 
