@@ -1,0 +1,151 @@
+.tabs__buttons {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 10px 0;
+  column-gap: 45px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+
+
+  @media (min-width: $tablet-width) {
+    column-gap: 46px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 54px;
+    padding-bottom: 8px;
+  }
+}
+
+.tabs__button {
+  position: relative;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  opacity: .5;
+  font-size: $font-line-size-16;
+  line-height: $font-line-size-16;
+  font-weight: $regular;
+  color: $color-sapphire;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-18;
+    line-height: $font-line-size-18;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-line-size-20;
+    line-height: $font-line-size-20;
+  }
+
+  &:hover {
+    color: $color-sapphire;
+    opacity: .7;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 1px;
+      background-color: $color-border-grey;
+      right: 2px;
+      bottom: -19px;
+      z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        height: 2px;
+        right: -1px;
+        bottom: -8px;
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: -10px;
+      }
+    }
+  }
+
+  &:focus {
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 1px;
+      background-color: $color-sapphire;
+      right: 2px;
+      bottom: -19px;
+      z-index: 1;
+
+      @media (min-width: $tablet-width) {
+        height: 2px;
+        right: -1px;
+        bottom: -8px;
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: -10px;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: .3;
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105%;
+      height: 1px;
+      background-color: $color-sapphire;
+      right: 2px;
+      bottom: -19px;
+      z-index: 1;
+      opacity: .3;
+
+      @media (min-width: $tablet-width) {
+        height: 2px;
+        right: -1px;
+        bottom: -8px;
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: -10px;
+      }
+    }
+  }
+}
+
+.is-active {
+  opacity: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 1px;
+    background-color: $color-crimson;
+    right: 2px;
+    bottom: -19px;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      height: 2px;
+      right: -1px;
+      bottom: -8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -10px;
+    }
+  }
+}

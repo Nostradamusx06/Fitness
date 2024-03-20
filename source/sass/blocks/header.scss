@@ -50,12 +50,12 @@
   color: $color-default-white;
   font-weight: $semi-bold;
   font-size: 27px;
-  line-height: 22px;
+  line-height: $font-line-size-22;
   letter-spacing: 0.02em;
 
 
   &:disabled {
-    opacity: 0.5;
+    opacity: .5;
     color: $color-ghost-white;
   }
 
@@ -75,15 +75,15 @@
 
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 24px;
+    font-size: $font-line-size-30;
+    line-height: $font-line-size-24;
     font-weight: $bold;
     letter-spacing: 0.4px;
   }
 
   @media (min-width: $desktop-width) {
     font-weight: $semi-bold;
-    font-size: 32px;
+    font-size: $font-line-size-32;
     line-height: 31px;
     letter-spacing: 0.02em;
     margin: 0;
