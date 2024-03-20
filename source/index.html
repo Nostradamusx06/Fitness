@@ -122,25 +122,52 @@
       </div>
     </section>
 
-    <section class="subscription" id="subscriptions"  data-test="price">
+    <section class="subscription" id="subscriptions" data-test="price">
       <h2 class="subscription__header">Абонементы</h2>
       <div class="subscription__wrapper tabs">
         <div class="tabs__buttons no-js">
-          <button class="tabs__button is-active" data-tab="1" data-prices="5000,1700,2700" type="button"
+          <button class="tabs__button is-active" data-index="1" data-prices="5000,1700,2700" type="button"
             aria-label="1 месяц">
             1 месяц
           </button>
-          <button class="tabs__button" data-tab="2" data-prices="30000,10200,16200" type="button"
+          <button class="tabs__button" data-index="2" data-prices="30000,10200,16200" type="button"
             aria-label="6 месяцев">
             6 месяцев
           </button>
-          <button class="tabs__button" data-tab="3" data-prices="60000,20400,32400" type="button"
+          <button class="tabs__button" data-index="3" data-prices="60000,20400,32400" type="button"
             aria-label="12 месяцев">
             12 месяцев
           </button>
         </div>
-        <div class="subscription__content"></div>
-      </div>
+        <div class="subscription__content">
+          <div class="subscription__content-wrapper" data-list="1">
+            <ul class="subscription__list">
+              <li class="subscription__item">
+                <h4 class="subscription__item-header">С тренером</h4>
+                <p class="subscription__item-description">12 занятий</p>
+                <span class="subscription__min-text">5000</span>
+                <span class="subscription__max-text">5000</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h4 class="subscription__item-header">Дневной</h4>
+                <p class="subscription__item-description">с 8:00 до 17:00</p>
+                <span class="subscription__min-text">1700</span>
+                <span class="subscription__max-text">1700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+              <li class="subscription__item">
+                <h4 class="subscription__item-header">Полный день</h4>
+                <p class="subscription__item-description">с 8:00 до 22:00</p>
+                <span class="subscription__min-text">2700</span>
+                <span class="subscription__max-text">2700</span>
+                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscription__content-wrapper" data-list="2"></div>
+        <div class="subscription__content-wrapper" data-list="3"></div>
     </section>
 
   </main>
