@@ -1,11 +1,11 @@
 .gym {
   min-height: 796px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     min-height: 751px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-height: 760px;
   }
 }
@@ -14,113 +14,134 @@
   padding: 0;
   padding-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr;
+  @media(min-width: $tablet-width) {
     padding-bottom: 50px;
+
+    grid-template-columns: 1fr;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     position: relative;
+
     display: grid;
-    grid-template-columns: 355px 1fr;
-    column-gap: 157px;
+
     max-width: 1250px;
     padding: 120px 44px 20px 91px;
+
+    grid-template-columns: 355px 1fr;
+    column-gap: 157px;
   }
 }
 
 .gym__content {
   padding: 40px 15px 0;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding: 61px 15px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 370px;
     padding: 0;
   }
 }
 
 .gym__header {
+  font-family: $alumni;
+  font-size: $font-line-size-elephant;
+  font-weight: $semi-bold;
+  line-height: $font-line-size-giraffe;
+
   margin: 0;
   margin-bottom: 12px;
-  letter-spacing: 0.03em;
-  font-family: $alumni;
-  font-weight: $semi-bold;
-  color: $color-sapphire;
-  font-size: $font-line-size-30;
-  line-height: $font-line-size-32;
-  text-align: start;
 
-  @media (min-width: $tablet-width) {
-    font-size: $font-line-size-42;
-    line-height: $font-line-size-42;
-    text-align: center;
+  text-align: start;
+  letter-spacing: 0.03em;
+
+  color: $color-sapphire;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-whale-shark;
+    line-height: $font-line-size-whale-shark;
+
     margin-bottom: 0;
+
+    text-align: center;
     letter-spacing: normal;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 26px;
-    font-size: $font-line-size-54;
-    line-height: $font-line-size-54;
-    letter-spacing: 0;
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-оrca;
+    line-height: $font-line-size-оrca;
+
     margin-right: 35px;
+    margin-bottom: 26px;
+
+    letter-spacing: 0;
   }
 }
 
 .gym__description {
-  margin: 0;
-  font-size: $font-line-size-18;
-  line-height: $font-line-size-20;
-  text-align: start;
-  color: $color-sapphire;
   font-family: $roboto;
+  font-size: $font-line-size-wolf;
   font-weight: $light;
+  line-height: $font-line-size-deer;
 
-  @media (min-width: $tablet-width) {
-    text-align: center;
-    padding: 20px 0 0;
-    font-size: $font-line-size-20;
-    line-height: $font-line-size-20;
+  margin: 0;
+
+  text-align: start;
+
+  color: $color-sapphire;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-deer;
+    line-height: $font-line-size-deer;
+
     width: 100%;
+    padding: 20px 0 0;
+
+    text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    letter-spacing: 0.06em;
+  @media(min-width: $desktop-width) {
     display: flex;
+
     margin-left: 12px;
+    padding: 0;
+
+    letter-spacing: 0.06em;
   }
 }
 
 .gym__text {
-  margin-top: 36px;
   font-family: $roboto;
   font-weight: $light;
+
+  margin-top: 36px;
+
   color: $color-sapphire;
 
-  @media (max-width: $mobile-width) {
-    font-size: $font-line-size-14;
-    line-height: $font-line-size-22;
+  @media(max-width: $mobile-width) {
+    font-size: $font-line-size-rabbit;
+    line-height: $font-line-size-bear;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: $font-line-size-16;
-    line-height: $font-line-size-24;
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-fox;
+    line-height: $font-line-size-lion;
+
     margin-top: 35px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media(max-width: $tablet-width) {
     p:not(:first-child) {
       display: none;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 11px;
+  @media(min-width: $desktop-width) {
     margin-top: 95px;
+    margin-left: 11px;
   }
 
   // По требованию в ТЗ - эту часть нужно стилизовать каскадом от родителя
@@ -131,53 +152,57 @@
     &:first-child {
       margin-bottom: 36px;
 
-      @media (min-width: $tablet-width) {
-        text-align: center;
+      @media(min-width: $tablet-width) {
         width: 502px;
         margin: 0 auto;
         margin-bottom: 36px;
+
+        text-align: center;
       }
 
-      @media (min-width: $desktop-width) {
-        text-align: left;
+      @media(min-width: $desktop-width) {
         width: inherit;
         margin: 0;
         margin-bottom: 9px;
+
+        text-align: left;
       }
     }
   }
 }
 
 .gym__content-picture {
-  margin: 0;
   width: 320px;
   height: 280px;
+  margin: 0;
+
   background-color: $color-ghost-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 678px;
     height: 345px;
     margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
+  @media(min-width: $desktop-width) {
     width: 660px;
     height: 400px;
+    margin: 0;
   }
 }
 
 .gym__img {
   width: 320px;
   height: 280px;
+
   object-fit: cover;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 678px;
     height: 345px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: initial;
     height: initial;
   }

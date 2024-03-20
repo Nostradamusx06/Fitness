@@ -1,98 +1,115 @@
 .subscription {
   position: relative;
+
   overflow: hidden;
-  background-color: $color-ghost-white;
+
   padding-top: 14px;
 
-  @media (min-width: $tablet-width) {
+  background-color: $color-ghost-white;
+
+  @media(min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-height: 739px;
     padding: 55px 103px 0 103px
   }
 
   &::after {
-    display: none;
-    content: "";
     position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../img/subscription/disks.png");
 
-    @media (min-width: $tablet-width) {
-      display: block;
-      width: 404px;
-      height: 404px;
+    display: none;
+
+    content: "";
+
+    background-image: url("../img/subscription/disks.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media(min-width: $tablet-width) {
       bottom: 5px;
       left: 443px;
+
+      display: block;
+
+      width: 404px;
+      height: 404px;
     }
 
-    @media (min-width: $desktop-width) {
-      width: 328px;
-      height: 491px;
+    @media(min-width: $desktop-width) {
       bottom: -44px;
       left: 1064px;
+
+      width: 328px;
+      height: 491px;
     }
   }
 }
 
 .subscription__header {
   font-family: $alumni;
-  text-align: center;
-  font-size: $font-line-size-32;
-  line-height: $font-line-size-32;
+  font-size: $font-line-size-giraffe;
   font-weight: $semi-bold;
+  line-height: $font-line-size-giraffe;
+
   margin-bottom: 28px;
 
-  @media (min-width: $tablet-width) {
-    font-size: $font-line-size-42;
-    line-height: $font-line-size-42;
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-whale-shark;
+    line-height: $font-line-size-whale-shark;
+
     margin-bottom: 36px;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: $font-line-size-54;
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-оrca;
     font-weight: $semi-bold;
-    line-height: $font-line-size-54;
+    line-height: $font-line-size-оrca;
+
     margin-bottom: 20px;
   }
 }
 
 .subscription__wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .subscription__content {
   padding-top: 22px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-top: 37px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-top: 32px
   }
 }
 
 .subscription__list {
   font-family: $roboto;
+
   display: grid;
-  gap: 35px;
-  list-style: none;
+
   margin: 0 0 40px;
   padding: 0;
 
-  @media (min-width: $tablet-width) {
+  list-style: none;
+
+  gap: 35px;
+
+  @media(min-width: $tablet-width) {
     grid-template-columns: minmax(290px, 380px);
     gap: 42px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     grid-template-columns: repeat(3, auto);
     gap: 40px;
   }
@@ -100,38 +117,42 @@
 
 .subscription__item {
   position: relative;
+  z-index: 1;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: $color-default-white;
+  flex-direction: column;
+
   min-width: 290px;
   padding: 44px 69px 43px;
-  z-index: 1;
-  overflow-wrap: break-word;
-  outline: none;
+
   border: 7px solid $color-transparent;
+  outline: none;
+  background-color: $color-default-white;
+
+  overflow-wrap: break-word;
 
   &:hover {
     border-image: $border-gradient;
 
     .subscription__item-link {
+      color: $color-default-white;
       border: none;
       background: $button-gradient;
-      color: $color-default-white;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 56px 69px 57px;
-    max-width: 100%;
+  @media(min-width: $tablet-width) {
     min-width: 228px;
+    max-width: 100%;
+    padding: 56px 69px 57px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 33px 28px 34px;
+  @media(min-width: $desktop-width) {
     min-width: 290px;
     max-width: 360px;
     min-height: 369px;
+    padding: 33px 28px 34px;
   }
 }
 
@@ -140,145 +161,168 @@
 }
 
 .subscription__item-header {
+  font-size: $font-line-size-bear;
+  font-weight: $bold;
+  line-height: $font-line-size-bear;
+
   margin: 0;
   margin-bottom: 18px;
-  font-weight: $bold;
-  font-size: $font-line-size-22;
-  line-height: $font-line-size-22;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 2px;
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-lion;
+    line-height: $font-line-size-lion;
+
     margin-bottom: 21px;
-    font-size: $font-line-size-24;
-    line-height: $font-line-size-24;
+    padding-top: 2px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 26px;
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-hippo;
+    line-height: $font-line-size-hippo;
+
     margin-bottom: 17px;
-    font-size: $font-line-size-26;
-    line-height: $font-line-size-26;
+    padding-top: 26px;
   }
 }
 
 .subscription__item-description {
-  margin: 0;
-  font-size: $font-line-size-14;
-  line-height: $font-line-size-22;
+  font-size: $font-line-size-rabbit;
   font-weight: $light;
+  line-height: $font-line-size-bear;
+
+  margin: 0;
+
   color: $color-sapphire;
 
-  @media (min-width: $tablet-width) {
-    font-size: $font-line-size-16;
-    line-height: $font-line-size-24;
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-fox;
+    line-height: $font-line-size-lion;
   }
 }
 
 .subscription__item-link {
+  font-size: $font-line-size-mouse;
+  font-weight: $bold;
+  line-height: $font-line-size-mouse;
+
   width: 189px;
   padding: 25px 1px;
-  font-weight: $bold;
-  text-transform: uppercase;
-  font-size: $font-line-size-12;
-  line-height: $font-line-size-12;
-  border: 2px solid $color-sapphire;
-  cursor: pointer;
-  color: $color-sapphire;
 
-  @media (min-width: $tablet-width) {
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: $color-sapphire;
+  border: 2px solid $color-sapphire;
+
+  @media(min-width: $tablet-width) {
     width: 244px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 189px;
   }
 
   &:hover {
+    color: $color-default-white;
     border: none;
     background: $button-gradient;
-    color: $color-default-white;
   }
 
   &:focus {
+    color: $color-default-white;
     border: 2px solid $color-default-black;
     background: $tub-button-gradient;
-    color: $color-default-white;
   }
 
   &:active {
+    color: rgba($color-default-white, 0.7);
     border: none;
     background: $button-gradient;
-    color: rgba($color-default-white, 0.7);
   }
 
   &:disabled {
-    border: 2px solid $color-default-black;
-    opacity: 0.3;
     pointer-events: none;
+
+    opacity: 0.3;
+    border: 2px solid $color-default-black;
   }
 }
 
 .subscription__min-text {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: $bold;
   font-size: 48px;
+  font-weight: $bold;
   line-height: 72px;
-  color: $color-egyptian-blue;
+
+  position: relative;
+
+  display: inline-block;
+
   padding: 86px 33px 27px 0;
 
-  @media (min-width: $tablet-width) {
+  vertical-align: middle;
+
+  color: $color-egyptian-blue;
+
+  @media(min-width: $tablet-width) {
     font-size: 60px;
     line-height: 90px;
+
     padding: 84px 44px 21px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding: 79px 44px 17px 0;
   }
 
-
   &::after {
     position: absolute;
+    top: 57%;
+    right: -1%;
+
+    width: 24px;
+    height: 33px;
+
     content: "";
+
     background-image: url("../img/sprite/rouble.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 24px;
-    height: 33px;
-    right: -1%;
-    top: 57%;
 
-    @media (min-width: $tablet-width) {
-      width: 30px;
-      height: 42px;
+    @media(min-width: $tablet-width) {
       top: 66%;
       right: -9%;
+
+      width: 30px;
+      height: 42px;
+
       transform: translate(-50%, -50%);
     }
   }
 }
 
 .subscription__max-text {
-  position: absolute;
-  opacity: 0.5;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 80px;
   font-weight: $bold;
-  color: $color-grey;
-  z-index: -1;
-  user-select: none;
 
-  @media (min-width: $tablet-width) {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+
+  user-select: none;
+  transform: translate(-50%, -50%);
+
+  opacity: 0.5;
+  color: $color-grey;
+
+  @media(min-width: $tablet-width) {
     font-size: 100px;
     line-height: 150px;
+
     top: 51%;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     top: 50%
   }
 }
