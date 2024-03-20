@@ -23,6 +23,10 @@
   margin: 0;
   margin-right: 30px;
   margin-top: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+  }
 }
 
 .header__nav {
