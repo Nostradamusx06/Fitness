@@ -1,13 +1,14 @@
 .hero {
   width: 100%;
-  background: $main-gradient;
   min-height: 412px;
 
-  @media (min-width: $tablet-width) {
+  background: $main-gradient;
+
+  @media(min-width: $tablet-width) {
     min-height: 574px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-height: 574px;
   }
 }

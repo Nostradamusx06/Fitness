@@ -1,38 +1,41 @@
 .button {
   display: inline-flex;
-  padding: 24px 42px;
   justify-content: center;
-  word-break: break-word;
-  outline-offset: 3px;
-  text-decoration: none;
-  color: $color-default-white;
-  background-color: transparent;
-  border: none;
+
+  padding: 24px 42px;
+
   cursor: pointer;
   user-select: none;
-
   transition: opacity 0.3s ease;
+  text-decoration: none;
+  word-break: break-word;
+
+  color: $color-default-white;
+  border: none;
+  outline-offset: 3px;
+  background-color: transparent;
 
   &:disabled {
-    opacity: .5;
     pointer-events: none;
+
+    opacity: .5;
   }
 
   &:hover {
-    background-color: $color-default-white;
     color: $color-egyptian-blue;
+    background-color: $color-default-white;
   }
 
   &:focus {
-    border: $border-black;
     color: $color-egyptian-blue;
-    background-color: rgba(255, 255, 255, 0.8);
+    border: $border-black;
     outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   &:active {
     color: $color-sapphire;
-    background-color: $color-default-white;
     border: 2px solid $color-default-white;
+    background-color: $color-default-white;
   }
 }

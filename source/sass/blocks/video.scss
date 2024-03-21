@@ -1,28 +1,33 @@
 .video {
   width: 320px;
   height: 3px;
-  transform: translate(0);
-  background-color: $color-default-black;
-  padding-bottom: 52.25%;
   margin-top: 36px;
+  padding-bottom: 52.25%;
 
-  @media (min-width: $tablet-width) {
+  transform: translate(0);
+
+  background-color: $color-default-black;
+
+  @media(min-width: $tablet-width) {
     position: absolute;
-    padding: 0;
-    margin: 0;
     top: 1120px;
     left: 249px;
+
     width: 270px;
     height: 170px;
+    margin: 0;
+    padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    transform: translate(-50%, -50%);
+  @media(min-width: $desktop-width) {
     position: absolute;
-    width: 360px;
-    height: 230px;
     top: 520px;
     left: 683px;
+
+    width: 360px;
+    height: 230px;
+
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -34,57 +39,65 @@
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   border: none;
+
   object-fit: cover;
 }
 
 .video__button {
-  outline: none;
-  border: none;
-  padding: 0;
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+
   width: 52px;
   height: 52px;
+  padding: 0;
+
   cursor: pointer;
-  background: $button-gradient;
+  transform: translate(-50%, -50%);
+
+  border: none;
   border-radius: 50%;
+  outline: none;
+  background: $button-gradient;
 
   &:active {
-    background: $color-default-white;
     width: 52px;
     height: 52px;
 
+    background: $color-default-white;
   }
 
   &:focus {
     background: $color-link-water;
   }
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 52px;
     height: 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 72px;
     height: 72px;
   }
 }
 
 .video__button-img {
-  width: 72px;
-  height: 72px;
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
 
-  @media (min-width: $desktop-width) {
+  width: 72px;
+  height: 72px;
+
+  transform: translate(-50%, -50%);
+
+  @media(min-width: $desktop-width) {
     width: 100px;
     height: 100px;
   }
@@ -100,14 +113,16 @@
 }
 
 .video:hover .video__button-center {
-  fill: $color-sapphire;
   opacity: 0.6;
+
+  fill: $color-sapphire;
 }
 
 .video__button:focus .video__button-border,
 .video__button:active .video__button-border {
-  stroke: $color-sapphire;
   opacity: 1;
+
+  stroke: $color-sapphire;
 }
 
 .video__button:focus .video__button {
@@ -116,11 +131,13 @@
 
 .video__button:focus .video__button-center,
 .video__button:active .video__button-center {
-  fill: $color-sapphire;
   opacity: 1;
+
+  fill: $color-sapphire;
 }
 
 .video__button:disabled {
-  opacity: .4;
   pointer-events: none;
+
+  opacity: .4;
 }

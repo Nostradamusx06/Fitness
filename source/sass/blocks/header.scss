@@ -1,58 +1,67 @@
 .header__wrapper {
-  max-width: 320px;
   display: flex;
   justify-content: space-between;
-  min-height: 54px;
-  padding-left: 15px;
-  padding-right: 15px;
 
-  @media (min-width: $tablet-width) {
-    padding: 17px 31px 0 45px;
+  max-width: 320px;
+  min-height: 54px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media(min-width: $tablet-width) {
     max-width: 679px;
     min-height: 67px;
+    padding: 17px 31px 0 45px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 15px 102px 0 103px;
+  @media(min-width: $desktop-width) {
     max-width: 1336px;
     min-height: 101px;
+    padding: 15px 102px 0 103px;
   }
 }
 
 .header__logo {
   margin: 0;
-  margin-right: 30px;
   margin-top: 16px;
+  margin-right: 30px;
+
+  @media(min-width: $desktop-width) {
+    margin-top: 15px;
+  }
 }
 
 .header__nav {
-  align-self: flex-start;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 14px;
-  gap: 20px;
   font-family: $alumni;
 
-  @media (min-width: $tablet-width) {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+
+  padding-top: 14px;
+
+  gap: 20px;
+
+  @media(min-width: $tablet-width) {
     padding-top: 12px;
   }
 
-
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-top: 15px;
   }
 }
 
 .header__phone {
-  text-decoration: none;
-  color: $color-default-white;
-  font-weight: $semi-bold;
   font-size: 27px;
-  line-height: $font-line-size-22;
+  font-weight: $semi-bold;
+  line-height: $font-line-size-bear;
+
+  text-decoration: none;
   letter-spacing: 0.02em;
 
+  color: $color-default-white;
 
   &:disabled {
     opacity: .5;
@@ -73,19 +82,21 @@
     border-bottom: 1px solid $color-sapphire;
   }
 
-
-  @media (min-width: $tablet-width) {
-    font-size: $font-line-size-30;
-    line-height: $font-line-size-24;
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-elephant;
     font-weight: $bold;
+    line-height: $font-line-size-lion;
+
     letter-spacing: 0.4px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-giraffe;
     font-weight: $semi-bold;
-    font-size: $font-line-size-32;
     line-height: 31px;
-    letter-spacing: 0.02em;
+
     margin: 0;
+
+    letter-spacing: 0.02em;
   }
 }

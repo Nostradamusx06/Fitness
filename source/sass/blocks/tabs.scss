@@ -1,72 +1,85 @@
 .tabs__buttons {
-  margin-bottom: 8px;
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
+
+  margin-bottom: 8px;
   padding: 0 0 10px 0;
-  column-gap: 45px;
   padding-bottom: 18px;
+
   border-bottom: 1px solid rgba(120, 120, 120, 0.2);
 
+  column-gap: 45px;
 
-  @media (min-width: $tablet-width) {
-    column-gap: 46px;
+  @media(min-width: $tablet-width) {
     padding-bottom: 6px;
+
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
+    column-gap: 46px;
   }
 
-  @media (min-width: $desktop-width) {
-    column-gap: 54px;
+  @media(min-width: $desktop-width) {
     padding-bottom: 8px;
+
+    column-gap: 54px;
   }
 }
 
 .tabs__button {
-  position: relative;
-  padding: 0;
-  user-select: none;
-  outline: none;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  opacity: .5;
-  font-size: $font-line-size-16;
-  line-height: $font-line-size-16;
+  font-size: $font-line-size-fox;
   font-weight: $regular;
-  color: $color-sapphire;
+  line-height: $font-line-size-fox;
 
-  @media (min-width: $tablet-width) {
-    font-size: $font-line-size-18;
-    line-height: $font-line-size-18;
+  position: relative;
+
+  padding: 0;
+
+  cursor: pointer;
+  user-select: none;
+
+  opacity: .5;
+  color: $color-sapphire;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-wolf;
+    line-height: $font-line-size-wolf;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: $font-line-size-20;
-    line-height: $font-line-size-20;
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-deer;
+    line-height: $font-line-size-deer;
   }
 
   &:hover {
-    color: $color-sapphire;
     opacity: .7;
+    color: $color-sapphire;
 
     &::after {
-      content: "";
       position: absolute;
-      width: 105%;
-      height: 1px;
-      background-color: $color-border-grey;
+      z-index: 1;
       right: 2px;
       bottom: -19px;
-      z-index: 1;
 
-      @media (min-width: $tablet-width) {
-        height: 2px;
+      width: 105%;
+      height: 1px;
+
+      content: "";
+
+      background-color: $color-border-grey;
+
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
+
+        height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         bottom: -10px;
       }
     }
@@ -76,49 +89,58 @@
     opacity: 1;
 
     &::after {
-      content: "";
       position: absolute;
-      width: 105%;
-      height: 1px;
-      background-color: $color-sapphire;
+      z-index: 1;
       right: 2px;
       bottom: -19px;
-      z-index: 1;
 
-      @media (min-width: $tablet-width) {
-        height: 2px;
+      width: 105%;
+      height: 1px;
+
+      content: "";
+
+      background-color: $color-sapphire;
+
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
+
+        height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         bottom: -10px;
       }
     }
   }
 
   &:disabled {
-    opacity: .3;
     pointer-events: none;
 
+    opacity: .3;
+
     &::after {
-      content: "";
       position: absolute;
-      width: 105%;
-      height: 1px;
-      background-color: $color-sapphire;
+      z-index: 1;
       right: 2px;
       bottom: -19px;
-      z-index: 1;
-      opacity: .3;
 
-      @media (min-width: $tablet-width) {
-        height: 2px;
+      width: 105%;
+      height: 1px;
+
+      content: "";
+
+      opacity: .3;
+      background-color: $color-sapphire;
+
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
+
+        height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         bottom: -10px;
       }
     }
@@ -129,22 +151,26 @@
   opacity: 1;
 
   &::after {
-    content: "";
     position: absolute;
-    width: 105%;
-    height: 1px;
-    background-color: $color-crimson;
+    z-index: 1;
     right: 2px;
     bottom: -19px;
-    z-index: 1;
 
-    @media (min-width: $tablet-width) {
-      height: 2px;
+    width: 105%;
+    height: 1px;
+
+    content: "";
+
+    background-color: $color-crimson;
+
+    @media(min-width: $tablet-width) {
       right: -1px;
       bottom: -8px;
+
+      height: 2px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       bottom: -10px;
     }
   }

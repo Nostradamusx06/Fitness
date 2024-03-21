@@ -2,17 +2,17 @@
   max-width: 1366px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     margin: 0;
     padding: 0 45px;
   }
 
-  @media (width >= 769px) {
+  @media(width >= 769px) {
     margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 0 175px 0 240px;
+    padding: 0 175px 0 237px;
   }
 }
