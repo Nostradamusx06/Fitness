@@ -1,0 +1,110 @@
+.coach-description {
+  position: absolute;
+  top: 0;
+
+  overflow: auto;
+
+  width: 100%;
+  height: 100%;
+
+  transition: background-color 0.3s ease;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+}
+
+.coach-description__name {
+  font-size: $font-line-size-bear;
+  font-weight: $regular;
+  line-height: $font-line-size-bear;
+
+  position: static;
+
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 8px;
+
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+
+  opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.coach-description__sport {
+  font-size: $font-line-size-fox;
+  font-weight: $light;
+  line-height: $font-line-size-lion;
+
+  display: inline-block;
+
+  margin: 0;
+  margin-bottom: 33px;
+
+  transition: opacity 1.2s ease;
+  vertical-align: middle;
+  pointer-events: none;
+
+  opacity: 0;
+  color: $color-spindle;
+}
+
+.coach-description__list {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  transition: opacity 1.6s ease;
+  text-align: left;
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+.coach-description__item {
+  position: relative;
+
+  margin-bottom: 12px;
+  padding-left: 42px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    left: 26px;
+
+    width: 6px;
+    height: 6px;
+
+    content: "";
+
+    border-radius: 10px;
+    background-color: $color-default-white;
+
+    @media (min-width: $desktop-width) {
+      left: 21px;
+    }
+  }
+}
+
+.coach-description__option {
+  font-size: $font-line-size-rabbit;
+  font-weight: $regular;
+  line-height: $font-line-size-bear;
+
+  margin: 0;
+}

@@ -5,14 +5,14 @@
   flex-wrap: wrap;
 
   margin-bottom: 8px;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
   padding-bottom: 18px;
 
   border-bottom: 1px solid rgba(120, 120, 120, 0.2);
 
   column-gap: 45px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 6px;
 
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -20,7 +20,7 @@
     column-gap: 46px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 8px;
 
     column-gap: 54px;
@@ -39,24 +39,24 @@
   cursor: pointer;
   user-select: none;
 
-  opacity: .5;
+  opacity: 0.5;
   color: $color-sapphire;
   border: none;
   outline: none;
   background-color: transparent;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-wolf;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-deer;
     line-height: $font-line-size-deer;
   }
 
   &:hover {
-    opacity: .7;
+    opacity: 0.7;
     color: $color-sapphire;
 
     &::after {
@@ -72,14 +72,14 @@
 
       background-color: $color-border-grey;
 
-      @media(min-width: $tablet-width) {
+      @media (min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media(min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         bottom: -10px;
       }
     }
@@ -101,14 +101,14 @@
 
       background-color: $color-sapphire;
 
-      @media(min-width: $tablet-width) {
+      @media (min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media(min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         bottom: -10px;
       }
     }
@@ -117,7 +117,7 @@
   &:disabled {
     pointer-events: none;
 
-    opacity: .3;
+    opacity: 0.3;
 
     &::after {
       position: absolute;
@@ -130,17 +130,17 @@
 
       content: "";
 
-      opacity: .3;
+      opacity: 0.3;
       background-color: $color-sapphire;
 
-      @media(min-width: $tablet-width) {
+      @media (min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media(min-width: $desktop-width) {
+      @media (min-width: $desktop-width) {
         bottom: -10px;
       }
     }
@@ -163,14 +163,14 @@
 
     background-color: $color-crimson;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       right: -1px;
       bottom: -8px;
 
       height: 2px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       bottom: -10px;
     }
   }

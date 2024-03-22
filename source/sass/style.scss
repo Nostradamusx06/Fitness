@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper";
 
 /* GLOBAL */
 @import "global/variables";
@@ -19,4 +20,5 @@
 @import "blocks/subscription";
 @import "blocks/tabs";
 @import "blocks/games";
-
+@import "blocks/coach";
+@import "blocks/coach-description";

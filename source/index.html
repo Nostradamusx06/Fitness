@@ -138,21 +138,21 @@
           <div class="subscription__content-wrapper">
             <ul class="subscription__list">
               <li class="subscription__item">
-                <h4 class="subscription__item-header">С тренером</h4>
+                <h3 class="subscription__item-header">С тренером</h3>
                 <p class="subscription__item-description">12 занятий</p>
                 <span class="subscription__min-text">5000</span>
                 <span class="subscription__max-text">5000</span>
                 <a class="subscription__item-link button" href="#!">Купить абонемент</a>
               </li>
               <li class="subscription__item">
-                <h4 class="subscription__item-header">Дневной</h4>
+                <h3 class="subscription__item-header">Дневной</h3>
                 <p class="subscription__item-description">с 8:00 до 17:00</p>
                 <span class="subscription__min-text">1700</span>
                 <span class="subscription__max-text">1700</span>
                 <a class="subscription__item-link button" href="#!">Купить абонемент</a>
               </li>
               <li class="subscription__item">
-                <h4 class="subscription__item-header">Полный день</h4>
+                <h3 class="subscription__item-header">Полный день</h3>
                 <p class="subscription__item-description">с 8:00 до 22:00</p>
                 <span class="subscription__min-text">2700</span>
                 <span class="subscription__max-text">2700</span>
@@ -161,9 +161,10 @@
             </ul>
           </div>
         </div>
+      </div>
     </section>
 
-    <section class="games">
+    <section class="games" data-test="games">
       <div class="games__wrapper container">
         <div class="games__content">
           <div class="games__date">
@@ -185,7 +186,7 @@
             </div>
           </div>
           <p class="games__text">Ежегодные соревнования по&nbsp;CrossFit</p>
-          <a class="games__link button" href="#"> Заполнить заявку </a>
+          <a class="games__link button" href="#">Заполнить заявку</a>
         </div>
 
         <p class="games__picture">
@@ -203,16 +204,281 @@
             img/games/games-tablet@2x.jpg 2x" width="378" height="348">
             <img class="games__img" src="img/games/games-mobile@1x.jpg" srcset="img/games/games-mobile@2x.jpg 2x"
               alt="Мужчина бьющий об пол рукой" width="290" height="290" loading="lazy">
+          </picture>
         </p>
-        </picture>
+
+      </div>
+    </section>
+
+
+    <section class="coach" data-test="juri">
+      <div class="coach__container section-title">
+        <h2 class="coach__header">Жюри</h2>
+        <div class="coach__wrapper">
+          <button class="coach__button coach__button--prev swiper-button-prev" type="button">&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+              <circle class="coach__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
+              <path class="coach__button-center" d="M35 13L19 29L35 45" stroke="#102654" />
+            </svg>
+          </button>
+
+          <div class="coach__slider swiper">
+            <ul class="coach__list swiper-wrapper">
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name">Анна Павлова</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/anna-pavlova@1x.webp, img/coachs/anna-pavlova@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/anna-pavlova@1x.jpg"
+                      srcset="img/coachs/anna-pavlova@2x.jpg 2x" width="260" height="300"
+                      alt="Анна Павлова - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Анна Павлова</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name coach__item-name--small">Алексей Лавров</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/alexey-lavrov@1x.webp, img/coachs/alexey-lavrov@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/alexey-lavrov@1x.jpg"
+                      srcset="img/coachs/alexey-lavrov@2x.jpg 2x" width="260" height="300"
+                      alt="Алексей Лавров - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Алексей Лавров</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name  coach__item-name--big">Александр Пашков</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/alexander-pashkov.webp, img/coachs/alexander-pashkov@2x.webp 2x">
+
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="img/coachs/alexander-pashkov@1x.jpg 1x,
+                    img/coachs/alexander-pashkov@2x.jpg 2x" width="260" height="300">
+                    <img class="coach__photo-img" src="img/coachs/alexander-pashkov-mobile@1x.jpg"
+                      srcset="img/coachs/alexander-pashkov-mobile@2x.jpg 2x" width="227" height="280"
+                      alt="Александр Пашков - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Александр Пашков</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name">Мария Кетова</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/maria-ketova@1x.webp, img/coachs/maria-ketova@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/maria-ketova@1x.jpg"
+                      srcset="img/coachs/maria-ketova@2x.jpg 2x" width="260" height="300"
+                      alt="Мария Кетова - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Мария Кетова</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name">Анна Павлова</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/anna-pavlova@1x.webp, img/coachs/anna-pavlova@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/anna-pavlova@1x.jpg"
+                      srcset="img/coachs/anna-pavlova@2x.jpg 2x" width="260" height="300"
+                      alt="Анна Павлова - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Анна Павлова</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name coach__item-name--small">Алексей Лавров</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/alexey-lavrov@1x.webp, img/coachs/alexey-lavrov@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/alexey-lavrov@1x.jpg"
+                      srcset="img/coachs/alexey-lavrov@2x.jpg 2x" width="260" height="300"
+                      alt="Алексей Лавров - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Алексей Лавров</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name coach__item-name--big">Александр Пашков</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/alexander-pashkov@1x.webp, img/coachs/alexander-pashkov@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/alexander-pashkov@1x.jpg"
+                      srcset="img/coachs/alexander-pashkov@2x.jpg 2x" width="260" height="300"
+                      alt="Александр Пашков - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Александр Пашков</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="coach__item swiper-slide" tabindex="0">
+                <h3 class="coach__item-name">Мария Кетова</h3>
+                <div class="coach__photo">
+                  <picture>
+                    <source type="img/webp"
+                      srcset="img/coachs/maria-ketova@1x.webp, img/coachs/maria-ketova@2x.webp 2x">
+
+                    <img class="coach__photo-img" src="img/coachs/maria-ketova@1x.jpg"
+                      srcset="img/coachs/maria-ketova@2x.jpg 2x" width="260" height="300"
+                      alt="Мария Кетова - тренер по фитнесу">
+                  </picture>
+                </div>
+                <div class="coach__info coach-description">
+                  <h3 class="coach-description__name">Мария Кетова</h3>
+                  <span class="coach-description__sport">CrossFit</span>
+                  <ul class="coach-description__list">
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Certified Level 3 Trainer</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Победитель чемпионата России по CrossFit</p>
+                    </li>
+                    <li class="coach-description__item">
+                      <p class="coach-description__option">Опыт — 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <button class="coach__button coach__button--next swiper-button-next" type="button">&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+              <circle class="coach__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
+              <path class="coach__button-center" d="M35 13L19 29L35 45" stroke="#102654" />
+            </svg>
+          </button>
+        </div>
 
       </div>
     </section>
   </main>
 
+  <script type="module" src="js/vendor/vendor.js"></script>
   <script type="module" src="js/tabs.js"></script>
   <script type="module" src="js/video.js"></script>
   <script type="module" src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

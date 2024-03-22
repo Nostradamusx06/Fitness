@@ -8,9 +8,9 @@
 
   background-color: $color-default-black;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
-    top: 1120px;
+    top: 1114px;
     left: 249px;
 
     width: 270px;
@@ -19,7 +19,7 @@
     padding: 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 520px;
     left: 683px;
@@ -76,12 +76,12 @@
     background: $color-link-water;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 52px;
     height: 52px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 72px;
     height: 72px;
   }
@@ -97,7 +97,7 @@
 
   transform: translate(-50%, -50%);
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
   }
@@ -139,5 +139,5 @@
 .video__button:disabled {
   pointer-events: none;
 
-  opacity: .4;
+  opacity: 0.4;
 }
