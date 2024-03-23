@@ -7,13 +7,13 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 679px;
-    min-height: 67px;
-    padding: 17px 31px 0 45px;
+    min-height: 69px;
+    padding: 9px 31px 0 45px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 1336px;
     min-height: 101px;
     padding: 15px 102px 0 103px;
@@ -25,13 +25,13 @@
   margin-top: 16px;
   margin-right: 30px;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 15px;
   }
 }
 
 .header__nav {
-  font-family: $alumni;
+  font-family: $roboto;
 
   position: relative;
   z-index: 1;
@@ -44,27 +44,27 @@
 
   gap: 20px;
 
-  @media(min-width: $tablet-width) {
-    padding-top: 12px;
+  @media (min-width: $tablet-width) {
+    padding-top: 14px;
+    padding-right: 1px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 15px;
   }
 }
 
 .header__phone {
-  font-size: 27px;
+  font-size: $font-line-size-bear;
   font-weight: $semi-bold;
   line-height: $font-line-size-bear;
 
   text-decoration: none;
-  letter-spacing: 0.02em;
 
   color: $color-default-white;
 
   &:disabled {
-    opacity: .5;
+    opacity: 0.5;
     color: $color-ghost-white;
   }
 
@@ -82,15 +82,15 @@
     border-bottom: 1px solid $color-sapphire;
   }
 
-  @media(min-width: $tablet-width) {
-    font-size: $font-line-size-elephant;
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-lion;
     font-weight: $bold;
     line-height: $font-line-size-lion;
 
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-giraffe;
     font-weight: $semi-bold;
     line-height: 31px;
