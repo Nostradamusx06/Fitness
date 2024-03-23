@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 15px;
+    padding-top: 17px;
   }
 }
 
@@ -91,12 +91,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: $font-line-size-giraffe;
+    font-size: $font-line-size-hippo;
     font-weight: $semi-bold;
-    line-height: 31px;
+    line-height: $font-line-size-hippo;
 
     margin: 0;
-
-    letter-spacing: 0.02em;
   }
 }

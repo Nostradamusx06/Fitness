@@ -47,17 +47,18 @@
   justify-content: flex-end;
 
   margin: 0;
+  margin-right: 5px;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-line-size-whale-shark;
-    line-height: 41px;
+    line-height: $font-line-size-whale-shark;
 
     justify-content: flex-end;
 
     margin-right: 0;
-    margin-bottom: 10px;
-    padding-right: 28px;
+    margin-bottom: 9px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,12 +91,12 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    line-height: 10px;
+    line-height: $font-line-size-mouse;
 
     width: 172px;
     margin: 0;
     margin-left: 139px;
-    padding: 21px 5px 21px 4px;
+    padding: 21px 5px 19px 4px;
   }
 
   @media (min-width: $desktop-width) {
