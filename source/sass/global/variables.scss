@@ -12,7 +12,7 @@ $color-link-water: #c8c9cc;
 $color-grey: #e8e8e8;
 $color-border-grey: #787878;
 $color-spindle: #b6bdcc;
-
+$color-persian-blue: #2e35ac;
 
 // Default color
 
@@ -26,6 +26,7 @@ $main-gradient: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%
 $border-gradient: linear-gradient(142.51deg, #d10a42 0, #0041ca 87.33%) 1;
 $button-gradient: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
 $tub-button-gradient: linear-gradient(97deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+$number-gradient: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
 $coach-item-shadow: rgba(16, 38, 84, 0.89);
 
 // Typography
@@ -48,6 +49,8 @@ $font-line-size-giraffe: 32px;
 $font-line-size-whale-shark: 42px;
 $font-line-size-grampus: 54px;
 $font-line-size-blue-whale: 57px;
+$font-line-size-moon: 64px;
+$font-line-size-earth: 70px;
 $roboto: "Roboto Condensed", "Arial", sans-serif;
 $alumni: "Alumni Sans", "Arial", sans-serif;
 
