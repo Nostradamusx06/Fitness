@@ -5,10 +5,6 @@
   background: $main-gradient;
 
   @media (min-width: $tablet-width) {
-    min-height: 568px;
-  }
-
-  @media (min-width: $desktop-width) {
     min-height: 574px;
   }
 }
