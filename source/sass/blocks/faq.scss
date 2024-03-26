@@ -1,0 +1,438 @@
+.faq__container {
+  font-family: $roboto;
+
+  margin: 0 auto;
+  padding: 70px 15px 71px;
+
+  background-color: $color-ghost-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 45px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px 105px;
+  }
+}
+
+.faq__header {
+  font-family: $alumni;
+  font-size: $font-line-size-giraffe;
+  font-weight: $semi-bold;
+  line-height: $font-line-size-giraffe;
+
+  margin: 0;
+  margin-bottom: 34px;
+
+  text-align: center;
+
+  color: $color-sapphire;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-whale-shark;
+    line-height: $font-line-size-whale-shark;
+
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-line-size-grampus;
+    line-height: $font-line-size-grampus;
+
+    margin-bottom: 49px;
+
+    text-align: left;
+  }
+}
+
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+
+    gap: 40px;
+  }
+}
+
+.faq__tabs-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 36px;
+
+  list-style: none;
+
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 678px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+
+    max-width: 260px;
+    padding: 0;
+    padding-top: 1px;
+
+    gap: 8px;
+  }
+}
+
+.faq__item-button {
+  font-size: $font-line-size-fox;
+  font-weight: $regular;
+  line-height: $font-line-size-fox;
+
+  min-width: 140px;
+  max-width: 140px;
+  max-height: 46px;
+  padding: 15px 23px;
+
+  color: $color-sapphire;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-wolf;
+    line-height: $font-line-size-wolf;
+
+    min-width: 162px;
+    max-height: 54px;
+    padding: 17px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 260px;
+    max-height: none;
+    padding: 21px 48px 15px;
+  }
+
+  &--active {
+    color: $color-default-white;
+    border: none;
+    background: $button-gradient;
+
+    @media (min-width: $tablet-width) {
+      padding: 18px 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 21px 48px 15px;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    opacity: 0.2;
+  }
+
+  &:hover {
+    color: $color-sapphire;
+    border: 1px solid $color-sapphire;
+  }
+
+  &:focus {
+    color: $color-sapphire;
+    border: 1px solid $color-sapphire;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $color-default-white;
+    border: none;
+    background: $button-gradient;
+  }
+}
+
+.faq__accordion-list {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+
+    width: 100%;
+    height: 1px;
+
+    content: "";
+
+    background-color: $color-light-slate-grey;
+
+    @media (min-width: $tablet-width) {
+      bottom: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -5px;
+    }
+  }
+}
+
+.faq__accordion-item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 0 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 860px;
+    padding: 0;
+    padding-top: 32px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: "";
+
+    background-color: $color-light-slate-grey;
+  }
+
+  &:not(:first-child) {
+    padding-top: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 36px;
+    }
+  }
+
+  &:nth-child(2n)::before {
+    top: 4px;
+  }
+
+  &:nth-child(3n)::before {
+    top: 1px;
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 4px;
+    }
+  }
+
+  &:nth-child(4n)::before {
+    top: -1px;
+
+    @media (min-width: $tablet-width) {
+      top: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 4px;
+    }
+  }
+
+  button {
+    font-size: $font-line-size-deer;
+    font-weight: $regular;
+    line-height: $font-line-size-deer;
+
+    max-width: 234px;
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+    text-align: left;
+
+    color: $color-sapphire;
+    border: none;
+    background-color: $color-ghost-white;
+
+    @media (min-width: $tablet-width) {
+      font-size: $font-line-size-bear;
+      line-height: $font-line-size-bear;
+
+      max-width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: $font-line-size-lion;
+      line-height: $font-line-size-lion;
+
+      max-width: 645px;
+    }
+  }
+
+  span {
+    font-size: $font-line-size-fox;
+    font-weight: $light;
+    line-height: $font-line-size-deer;
+
+    display: inline-block;
+    overflow: hidden;
+
+    max-width: 285px;
+    max-height: 0;
+    margin: 0;
+    padding-top: 19px;
+
+    transition: max-height 0.1s ease-in-out;
+
+    color: $color-sapphire;
+
+    @media (min-width: $tablet-width) {
+      font-size: $font-line-size-wolf;
+      line-height: $font-line-size-lion;
+
+      max-width: 558px;
+      padding-top: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 660px;
+      padding-top: 31px;
+    }
+
+    &:not(.faq__answer--active) {
+      @media (min-width: $tablet-width) {
+        padding-top: 31px;
+
+        &:last-child {
+          padding-top: 25px;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-top: 31px;
+
+        &:last-child {
+          padding-top: 26px;
+        }
+      }
+    }
+  }
+
+  .faq__answer--active {
+    max-height: 300px;
+    padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 18px;
+    }
+  }
+
+  &:nth-child(2n)::after {
+    top: 29px;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 28px;
+    }
+  }
+
+  &:nth-child(3n)::after {
+    top: 37px;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 28px;
+    }
+  }
+
+  &:last-child {
+    padding-top: 21px;
+
+    border-bottom: 0;
+
+    &::after {
+      top: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 32px;
+
+      &::after {
+        top: 34px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 36px;
+
+      &::after {
+        top: 28px;
+      }
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 25px;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+
+    content: "";
+
+    background-image: url("../img/sprite/faq.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      top: 26px;
+      right: 0;
+
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 24px;
+    }
+  }
+
+  &--active::after {
+    background-image: url("../img/sprite/faq-active.svg");
+  }
+
+  &:hover::after {
+    background-image: url("../img/sprite/faq-hover.svg");
+  }
+
+  &:focus::after {
+    background-image: url("../img/sprite/faq-focus.svg");
+  }
+
+  &:disabled::after {
+    pointer-events: none;
+
+    opacity: 0.3;
+    background-image: url("../img/sprite/faq.svg");
+  }
+}

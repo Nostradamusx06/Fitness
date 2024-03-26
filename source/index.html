@@ -561,8 +561,9 @@
                 img/discount/girl-desktop@2x.jpg 2x" width="280" height="460">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="img/discount/girl-tablet@1x.jpg 1x,
                 img/discount/girl-tablet@2x.jpg 2x" width="400" height="462">
-                <img class="discount__picture-img" src="img/discount/girl-mobile@1x.jpg" srcset="img/discount/girl-mobile@2x.jpg 2x" width="320"
-                  height="360" alt="Девушка на фоне неба" loading="lazy" >
+                <img class="discount__picture-img" src="img/discount/girl-mobile@1x.jpg"
+                  srcset="img/discount/girl-mobile@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне неба"
+                  loading="lazy">
               </picture>
             </p>
           </div>
@@ -586,8 +587,57 @@
       </div>
     </section>
 
+    <section class="faq" data-test="faq">
+      <div class="faq__container">
+        <h2 class="faq__header">Вопросы и ответы</h2>
+        <div class="faq__wrapper">
+          <ul class="faq__tabs-list">
+            <li class="faq__item">
+              <button class="faq__item-button faq__item-button--active button" type="button">Центр</button>
+            </li>
+            <li class="faq__item">
+              <button class="faq__item-button button" type="button">Абонемент</button>
+            </li>
+            <li class="faq__item">
+              <button class="faq__item-button button" type="button">Услуги</button>
+            </li>
+            <li class="faq__item">
+              <button class="faq__item-button button" type="button">Правила</button>
+            </li>
+          </ul>
+          <ul class="faq__accordion-list">
+            <li class="faq__accordion-item">
+              <button type="button">Как стать членом фитнес-&#8288;центра?</button>
+              <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
+                договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придёт вам на
+                почту.
+              </span>
+            </li>
+            <li class="faq__accordion-item">
+              <button type="button">Где можно посмотреть расписание?</button>
+              <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
+                договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+              </span>
+            </li>
+            <li class="faq__accordion-item">
+              <button type="button">Есть кулеры в центре? Предоставляются полотенца?</button>
+              <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
+                договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+              </span>
+            </li>
+            <li class="faq__accordion-item">
+              <button type="button">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</button>
+              <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
+                договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <script type="module" src="js/accordion.js"></script>
   <script type="module" src="js/vendor/vendor.js"></script>
   <script type="module" src="js/tabs.js"></script>
   <script type="module" src="js/video.js"></script>
