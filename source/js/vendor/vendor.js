@@ -36,5 +36,26 @@ import './swiper.js';
       },
     });
   };
+
+  const createSwiperReviews = () => {
+    const reviewsSwiper = document.querySelector('.reviews__slider');
+    if (!reviewsSwiper) {
+      return;
+    }
+
+    const swiperForReviews = new Swiper(reviewsSwiper, {
+
+      navigation: {
+        nextEl: '.reviews__button--next',
+        prevEl: '.reviews__button--prev',
+      },
+      spaceBetween: 60,
+      slidesPerView: 1,
+      grabCursor: true,
+    });
+  }
+
   createSwiperCoach();
+  createSwiperReviews();
 })();
+
