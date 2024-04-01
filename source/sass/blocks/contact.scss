@@ -1,0 +1,170 @@
+.contact {
+  padding: 36px 15px 40px;
+
+  color: $color-sapphire;
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 0 60px 103px;
+
+    border-top: 1px solid #74819c;
+  }
+}
+
+.contact__header {
+  font-family: $alumni;
+  font-size: $font-line-size-giraffe;
+  font-weight: $semi-bold;
+  line-height: $font-line-size-giraffe;
+
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-grampus;
+    line-height: $font-line-size-grampus;
+
+    margin-bottom: 36px;
+    padding-left: 241px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    text-align: left;
+  }
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  row-gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    max-width: 440px;
+    margin: 0 auto;
+
+    gap: 15px 81px;
+
+    &::after {
+      position: absolute;
+      right: 382.5px;
+
+      width: 1px;
+      height: 117px;
+
+      content: "";
+      transform: translate(-50%);
+
+      background-color: $color-light-slate-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 477px;
+    margin: 0;
+
+    gap: 14px 129px;
+
+    &::after {
+      right: 340px;
+    }
+  }
+
+  @media (width >= 1440px) {
+    &::after {
+      right: 26%;
+    }
+  }
+}
+
+.contact__item {
+  &--address {
+    order: 0;
+  }
+
+  &--phone {
+    order: 2;
+  }
+
+  &--timetable {
+    order: 1;
+  }
+
+  &--email {
+    order: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--phone {
+      order: 1;
+    }
+
+    &--timetable {
+      order: 2;
+    }
+
+    &--email {
+      padding-left: 13px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      padding-left: 14px;
+    }
+  }
+}
+
+.contact__item-header {
+  font-size: $font-line-size-deer;
+  font-weight: $regular;
+  line-height: $font-line-size-deer;
+
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-line-size-lion;
+    line-height: $font-line-size-lion;
+
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+  }
+}
+
+.contact__description {
+  font-size: $font-line-size-rabbit;
+  font-weight: $regular;
+  line-height: $font-line-size-deer;
+
+  margin: 0;
+
+  color: $color-sapphire;
+
+  @media (min-width: $desktop-width) {
+    line-height: $font-line-size-bear;
+  }
+
+  &--link {
+    text-decoration: none;
+  }
+}
