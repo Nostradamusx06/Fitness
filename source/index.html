@@ -635,6 +635,69 @@
         </div>
       </div>
     </section>
+
+    <section class="info-group" data-test="form">
+      <div class="info-group__container">
+        <div class="info-group__first">
+          <div class="info-group__form form">
+            <h2 class="form__header">Бесплатное занятие</h2>
+
+            <form class="form__container" action="https://echo.htmlacademy.ru" method="post">
+
+              <div class="form__wrapper">
+                <label class="form__field">
+                  <input class="form__input" id="field-for-name" type="text" name="user-name" placeholder="Имя"
+                    pattern="^[a-zA-Zа-яА-Я\s]+$" required>&nbsp;
+                </label>
+
+                <label class="form__field">
+                  <input class="form__input" id="field-for-phone" type="tel" name="user-phone" placeholder="Телефон"
+                    maxlength="18" pattern="\+?[0-9\s\-\(\)]+" required>&nbsp;
+                </label>
+              </div>
+
+              <button class="form__button" type="submit" value="Отправить">Отправить</button>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="info-group__second">
+          <div class="info-group__contact contact">
+            <h2 class="contact__header">Контакты</h2>
+
+            <ul class="contact__list">
+              <li class="contact__item contact__item--address">
+                <h3 class="contact__item-header">Адрес:</h3>
+                <p class="contact__description">
+                  г. Омск, ул. 60 лет Октября,&nbsp;7
+                </p>
+              </li>
+              <li class="contact__item contact__item--phone">
+                <h3 class="contact__item-header">Телефон:</h3>
+                <a class="contact__description contact__description--link" href="tel:+78005555555">
+                  8 800 555-55-55
+                </a>
+              </li>
+              <li class="contact__item contact__item--timetable">
+                <h3 class="contact__item-header">График работы:</h3>
+                <p class="contact__description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contact__item contact__item--email">
+                <h3 class="contact__item-header">Email:</h3>
+                <a class="contact__description contact__description--link" href="mailto:omsk@supergym.ru">
+                  омск@supergym.ru
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
   <script type="module" src="js/accordion.js"></script>
