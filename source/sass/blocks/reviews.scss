@@ -3,16 +3,16 @@
 
   max-width: 100%;
   margin: 0 auto;
-  padding: 41px 40px 22px;
+  padding: 41px 40px 24px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 500px;
-    padding: 61px 45px 100px;
+    padding: 61px 45px 44px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 560px;
-    padding: 100px 237px 0 237px;
+    padding: 100px 237px 84px;
   }
 }
 
@@ -29,14 +29,14 @@
 
   color: $color-sapphire;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
     margin-bottom: 34px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 75px;
   }
 }
@@ -59,7 +59,7 @@
 
   color: $color-default-white;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 242px;
   }
 }
@@ -69,9 +69,9 @@
   align-items: center;
   flex-direction: column;
 
-  padding: 30px 25px 29px 25px;
+  padding: 30px 25px 29px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
 
     padding: 23px 43px 41px 30px;
@@ -80,7 +80,7 @@
     gap: 0 40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 55px 57px 60px 60px;
 
     grid-template-rows: none;
@@ -97,7 +97,7 @@
 
     text-align: center;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-fox;
       line-height: $font-line-size-lion;
 
@@ -116,7 +116,7 @@
     margin: 0;
     margin-bottom: 17px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-bear;
       line-height: $font-line-size-bear;
 
@@ -126,7 +126,7 @@
       grid-row: 1;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       margin-bottom: 19px;
       padding-top: 6px;
     }
@@ -137,11 +137,11 @@
   margin: 0;
   margin-bottom: 6px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 66px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
 
@@ -150,8 +150,8 @@
   }
 
   img {
-    @media(min-width: $desktop-width) {
-      margin: 0px 0 1px;
+    @media (min-width: $desktop-width) {
+      margin: 0 0 1px;
     }
   }
 }
@@ -163,7 +163,7 @@
   outline: none;
   background-color: transparent;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
 
     display: block;
@@ -185,12 +185,12 @@
 }
 
 .reviews__button.swiper-button-prev {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 240px;
     left: -69px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 328px;
     left: 156px;
   }
@@ -199,12 +199,12 @@
 .reviews__button.swiper-button-next {
   transform: rotate(180deg);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 268px;
     right: -69px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 356px;
     right: 156px;
   }

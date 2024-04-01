@@ -3,15 +3,19 @@
 
   padding-bottom: 32px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     display: flex;
     justify-content: center;
 
+    padding-right: 45px;
     padding-bottom: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    width: 1003px;
+    padding: 0;
     padding-bottom: 120px;
+    padding-left: 13px;
   }
 }
 
@@ -27,13 +31,15 @@
 
   color: $color-default-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 408px;
     padding-top: 31px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    margin: 0;
     padding-top: 52px;
+    padding-left: 65px;
   }
 }
 
@@ -50,22 +56,22 @@
   margin-right: 5px;
   margin-bottom: 13px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-whale-shark;
     line-height: $font-line-size-whale-shark;
 
     justify-content: flex-end;
 
     margin-right: 0;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     padding-right: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
-    margin-right: 25px;
+    margin-right: 26px;
     margin-bottom: 40px;
     padding: 0;
   }
@@ -90,22 +96,22 @@
   border: $border-white;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     line-height: $font-line-size-mouse;
 
     width: 172px;
     margin: 0;
     margin-left: 139px;
-    padding: 21px 5px 19px 4px;
+    padding: 20px 5px 20px 4px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     align-self: end;
 
     width: 233px;
     margin: 0;
     margin-right: 26px;
-    padding: 27px 16px 25px 17px;
+    padding: 26px 16px 24px 17px;
   }
 }
 
@@ -118,38 +124,40 @@
 
 .main__list-header {
   font-family: $alumni;
-  font-size: $font-line-size-blue-whale;
-  font-weight: $semi-bold;
-  line-height: 63px;
+  font-size: 62px;
+  font-weight: $extra-bold;
+  line-height: 62px;
 
   flex-grow: 1;
 
   width: 243px;
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
   margin-left: auto;
+  padding-top: 1px;
+  padding-right: 4px;
 
   text-align: right;
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    font-size: 67px;
+  @media(min-width: $tablet-width) {
+    font-size: 72px;
     line-height: 85px;
 
     margin-right: 28px;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
     margin-left: 0;
+    padding: 0;
 
-    letter-spacing: 0.06em;
+    letter-spacing: 2px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: 92px;
-    font-weight: $extra-bold;
     line-height: 110px;
 
-    margin-right: 25px;
+    margin-right: 26px;
     margin-bottom: 40px;
 
     letter-spacing: 4px;
@@ -160,18 +168,18 @@
   flex-shrink: 0;
 
   margin: 0;
-  margin-top: 18px;
-  margin-left: 6px;
+  margin-top: 19px;
+  margin-left: 5px;
   padding: 0;
 
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     margin: 0;
-    margin-top: 7px;
+    margin-top: 5px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     margin-top: 25px;
     margin-bottom: 51px;
   }
@@ -181,11 +189,15 @@
   font-family: $roboto;
   font-size: $font-line-size-rabbit;
   font-weight: $regular;
-  line-height: $font-line-size-bear;
+  line-height: $font-line-size-deer;
 
   text-align: end;
 
   overflow-wrap: break-word;
+
+  @media(min-width: $tablet-width) {
+    line-height: $font-line-size-bear;
+  }
 }
 
 .main__picture {
@@ -198,14 +210,14 @@
 
   object-fit: cover;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     display: block;
 
     width: 324px;
     height: 390px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 500px;
     height: 524px;
   }

@@ -26,7 +26,7 @@
           </picture>
         </p>
 
-        <nav class="header__nav">
+        <nav class="header__nav" aria-label="номер телефона supergym">
           <a class="header__phone" href="tel:88005555555">8 800 555-55-55</a>
         </nav>
       </div>
@@ -50,10 +50,15 @@
         </div>
         <p class="main__picture">
           <picture>
-            <source type="image/webp" srcset="img/hero/hero@1x.webp 1x, img/hero/hero@2x.webp 2x" width="500"
-              height="524">
-            <img class="main__img" src="img/hero/hero@1x.jpg" srcset="img/hero/hero@2x.jpg 2x" width="500" height="524"
-              loading="lazy" alt="Портрет мужчины">
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/hero/hero-desktop@1x.webp 1x, img/hero/hero-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/hero/hero-tablet@1x.webp 1x, img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
+
+            <source type="image/jpg" media="(min-width: 1366px)"
+              srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="500" height="524">
+            <img class="main__img" src="img/hero/hero-tablet@1x.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x" width="324"
+              height="390" loading="lazy" alt="Портрет мужчины">
           </picture>
         </p>
       </div>
@@ -68,14 +73,14 @@
           <p class="gym__description">Просторный зал площадью 900&nbsp;кв/м</p>
           <div class="gym__text">
             <p>
-              Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом
+              Supergym&nbsp;&mdash;&hairsp;самый большой фитнес центр за&nbsp;Уралом
               и&nbsp;идеальное место для укрепления тела
               и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
               современным оборудованием для&nbsp;всех спортсменов.
             </p>
             <p>
               В&nbsp;зале расположены отдельная зона для Crossfit
-              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажёрами. Также
               в&nbsp;фитнес центре есть несколько оборудованных залов<br>
               для различных видов групповых занятий.
             </p>
@@ -88,7 +93,7 @@
             <source type="image/webp" media="(min-width: 320px)" width="320" height="280"
               srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
 
-            <source type="image/webp" media="(min-width:768px)"
+            <source type="image/jpg" media="(min-width:768px)"
               srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
             <img class="gym__img" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320"
               height="280" alt="Тренажерный зал" loading="lazy">
@@ -638,7 +643,7 @@
 
     <section class="reviews" data-test="reviews">
       <div class="reviews__container">
-        <button type="button" class="reviews__button reviews__button--prev swiper-button-prev no-js"
+        <button class="reviews__button reviews__button--prev swiper-button-prev no-js" type="button"
           aria-label="previous-slide">
           <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
             <circle class="reviews__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
@@ -781,7 +786,7 @@
           </ul>
         </div>
 
-        <button type="button" class="reviews__button reviews__button--next swiper-button-next no-js"
+        <button class="reviews__button reviews__button--next swiper-button-next no-js" type="button"
           aria-label="next-slide">
           <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
             <circle class="reviews__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
@@ -790,9 +795,133 @@
         </button>
       </div>
     </section>
+    <section class="info-group" data-test="form">
+      <div class="info-group__container">
+        <div class="info-group__first">
+          <div class="info-group__form form">
+            <h2 class="form__header">Бесплатное занятие</h2>
 
+            <form class="form__container" action="https://echo.htmlacademy.ru" method="post">
+
+              <div class="form__wrapper">
+                <label class="form__field">
+                  <input class="form__input" id="form-input-first" type="text" name="user-name" placeholder="Имя"
+                    pattern="^[a-zA-Zа-яА-Я\s]+$" required>&nbsp;
+                  <span class="error-message"></span>
+                </label>
+
+                <label class="form__field">
+                  <input class="form__input" id="form-input-second" type="tel" name="user-phone" placeholder="Телефон"
+                    maxlength="18" pattern="\+?[0-9\s\-\(\)]+" required>&nbsp;
+                  <span class="error-message"></span>
+                </label>
+              </div>
+
+              <button class="form__button button" type="submit" value="Отправить">Отправить</button>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="info-group__second">
+          <div class="info-group__contact contact">
+            <h2 class="contact__header">Контакты</h2>
+
+            <ul class="contact__list">
+              <li class="contact__item contact__item--address">
+                <h3 class="contact__item-header">Адрес:</h3>
+                <p class="contact__description">
+                  г. Омск, ул. 60 лет Октября,&nbsp;7
+                </p>
+              </li>
+              <li class="contact__item contact__item--phone">
+                <h3 class="contact__item-header">Телефон:</h3>
+                <a class="contact__description contact__description--link" href="tel:+78005555555">
+                  8 800 555-55-55
+                </a>
+              </li>
+              <li class="contact__item contact__item--timetable">
+                <h3 class="contact__item-header">График работы:</h3>
+                <p class="contact__description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contact__item contact__item--email">
+                <h3 class="contact__item-header">Email:</h3>
+                <a class="contact__description contact__description--link" href="mailto:omsk@supergym.ru">
+                  омск@supergym.ru
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer" data-test="footer">
+    <div class="footer__wrapper container">
+      <p class="footer__logo">
+        <picture>
+          <source type="image/webp" media="(min-width:1336px)" srcset="img/logo/logo-desktop.svg" width="130"
+            height="26">
+          <source type="image/webp" media="(min-width:768px)" srcset="img/logo/logo-tablet.svg" width="110" height="22">
+          <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип Drink2Go.">
+        </picture>
+      </p>
+
+      <nav class="footer__links" aria-label="полезные ссылки по сайту supergym">
+        <ul class="footer__links-list">
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">Услуги</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">Абонементы</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">Акции</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">Тренеры</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__icons">
+        <p class="footer__icons-item">
+          <a class="footer__icons-link" href="https://vk.com/nostradamus12" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="footer__icons-img" width="25" height="25">
+              <use href="img/sprite/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </p>
+
+        <p class="footer__icons-item">
+          <a class="footer__icons-link" href="https://ok.ru/" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Одноклассники</span>
+            <svg class="footer__icons-img" width="25" height="25">
+              <use href="img/sprite/sprite.svg#ok"></use>
+            </svg>
+          </a>
+        </p>
+
+        <p class="footer__icons-item">
+          <a class="footer__icons-link" href="https://www.reddit.com/user/Nastradamussx/" target="_blank"
+            rel="noreferrer noopener">
+            <span class="visually-hidden">Reddit</span>
+            <svg class="footer__icons-img" width="25" height="25">
+              <use href="img/sprite/sprite.svg#reddit"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/error.js"></script>
   <script type="module" src="js/accordion.js"></script>
   <script type="module" src="js/vendor/vendor.js"></script>
   <script type="module" src="js/tabs.js"></script>

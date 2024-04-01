@@ -1,11 +1,11 @@
 .gym {
   min-height: 796px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     min-height: 751px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-height: 760px;
   }
 }
@@ -14,13 +14,13 @@
   padding: 0;
   padding-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-bottom: 50px;
 
     grid-template-columns: 1fr;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     position: relative;
 
     display: grid;
@@ -34,13 +34,13 @@
 }
 
 .gym__content {
-  padding: 40px 15px 0;
+  padding: 41px 15px 0;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding: 61px 15px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 370px;
     padding: 0;
   }
@@ -48,43 +48,38 @@
 
 .gym__header {
   font-family: $alumni;
-  font-size: $font-line-size-elephant;
+  font-size: $font-line-size-giraffe;
   font-weight: $semi-bold;
   line-height: $font-line-size-giraffe;
 
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 
   text-align: start;
-  letter-spacing: 0.03em;
 
   color: $color-sapphire;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-whale-shark;
     line-height: $font-line-size-whale-shark;
 
     margin-bottom: 0;
 
     text-align: center;
-    letter-spacing: normal;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
     margin-right: 35px;
     margin-bottom: 26px;
-
-    letter-spacing: 0;
   }
 }
 
 .gym__description {
   font-family: $roboto;
   font-size: $font-line-size-wolf;
-  font-weight: $light;
   line-height: $font-line-size-deer;
 
   margin: 0;
@@ -93,7 +88,7 @@
 
   color: $color-sapphire;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-deer;
     line-height: $font-line-size-deer;
 
@@ -103,13 +98,14 @@
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-bear;
+    line-height: $font-line-size-bear;
+
     display: flex;
 
     margin-left: 12px;
     padding: 0;
-
-    letter-spacing: 0.06em;
   }
 }
 
@@ -121,26 +117,26 @@
 
   color: $color-sapphire;
 
-  @media (max-width: $mobile-width) {
+  @media(max-width: $mobile-width) {
     font-size: $font-line-size-rabbit;
     line-height: $font-line-size-bear;
   }
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-lion;
 
     margin-top: 35px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media(max-width: $tablet-width) {
     p:not(:first-child) {
       display: none;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 95px;
+  @media(min-width: $desktop-width) {
+    margin-top: 94px;
     margin-left: 11px;
   }
 
@@ -148,11 +144,12 @@
 
   p {
     margin: 0;
+    margin-left: 1px;
 
     &:first-child {
       margin-bottom: 36px;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         width: 502px;
         margin: 0 auto;
         margin-bottom: 36px;
@@ -160,11 +157,11 @@
         text-align: center;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         width: inherit;
         margin: 0;
-        margin-bottom: 9px;
-
+        margin-bottom: 8px;
+        margin-left: 1px;
         text-align: left;
       }
     }
@@ -178,13 +175,13 @@
 
   background-color: $color-ghost-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 678px;
     height: 345px;
     margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 660px;
     height: 400px;
     margin: 0;
@@ -197,12 +194,12 @@
 
   object-fit: cover;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 678px;
     height: 345px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: initial;
     height: initial;
   }
