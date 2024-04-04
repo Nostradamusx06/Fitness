@@ -4,6 +4,7 @@
   overflow: hidden;
 
   padding-top: 14px;
+  color: $color-sapphire;
 
   background-color: $color-ghost-white;
 
@@ -29,21 +30,29 @@
     background-size: cover;
 
     @media (min-width: $tablet-width) {
-      bottom: -14px;
+      bottom: -20px;
       left: 443px;
 
       display: block;
 
-      width: 404px;
-      height: 404px;
+      width: 403px;
+      height: 409px;
+    }
+
+    @media (min-width: 769px) {
+      left: 55vw;
     }
 
     @media (min-width: $desktop-width) {
       bottom: -44px;
       left: 1064px;
 
-      width: 328px;
+      width: 425px;
       height: 491px;
+    }
+
+    @media (min-width: 1380px) {
+      left: 72vw;
     }
   }
 }
@@ -123,8 +132,8 @@
   align-items: center;
   flex-direction: column;
 
-  min-width: 290px;
-  padding: 44px 69px 43px;
+  min-width: 276px;
+  padding: 44px 0 43px;
 
   border: 7px solid $color-transparent;
   outline: none;
@@ -191,8 +200,6 @@
   line-height: $font-line-size-bear;
 
   margin: 0;
-
-  color: $color-sapphire;
 
   @media (min-width: $tablet-width) {
     font-size: $font-line-size-fox;

@@ -30,10 +30,12 @@ $tub-button-gradient: linear-gradient(97deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0
 $number-gradient: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
 $coach-item-shadow: rgba(16, 38, 84, 0.89);
 $reviews-shadow-blue:  0 0 40px rgba(28, 51, 116, 0.2);
+$color-opacity-white: rgba(255, 255, 255, 0.3);
 $border-mobile-gradient: linear-gradient(157deg, #d10a42 0%, #00359f 100%, #d10a42) 1;
 
 // Typography
 
+$extra-light: 200;
 $light: 300;
 $regular: 400;
 $semi-bold: 600;

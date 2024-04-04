@@ -2,25 +2,30 @@
   max-width: 100%;
   padding: 71px 15px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     max-width: 688px;
     margin: 0 auto;
     padding: 60px 5px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    max-width: none;
     padding: 59px 103px 60px;
   }
 }
 
 .form__container {
-  @media (min-width: $tablet-width) {
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media(min-width: $tablet-width) {
     max-width: 440px;
-    margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     max-width: 477px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -30,35 +35,42 @@
   font-weight: $semi-bold;
   line-height: $font-line-size-giraffe;
 
-  margin: 0 0 36px;
+  margin: 0 auto;
+  width: 320px;
+  padding-left: 30px;
+  margin-bottom: 36px;
 
   color: $color-default-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
-
+    margin: 0;
+    padding: 0;
+    width: auto;
     margin-bottom: 32px;
 
     text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    width: 477px;
     margin: 1px 0 31px;
+    margin-left: auto;
 
     text-align: left;
   }
 }
 
 .form__wrapper {
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     display: grid;
 
     grid-template-columns: repeat(2, 205px);
     column-gap: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     grid-template-columns: repeat(2, 240px);
     column-gap: 14px;
   }
@@ -71,7 +83,7 @@
     margin-bottom: 36px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 100%;
     margin: 0;
 
@@ -98,7 +110,7 @@
   outline: none;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-weight: $regular;
 
     width: 100%;
@@ -106,7 +118,7 @@
     padding: 9px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 93%;
     height: 32px;
     margin-bottom: 35px;
@@ -122,11 +134,11 @@
 
     border: 1px solid $color-default-white;
 
-    @media (min-width: $tablet-width) {
+    @media(min-width: $tablet-width) {
       margin-bottom: 7px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       margin-bottom: 20px;
     }
 
@@ -148,7 +160,7 @@
     border: none;
     border-bottom: 1px solid $color-torch-red;
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       margin-bottom: 35px;
     }
   }
@@ -172,7 +184,7 @@
     display: block;
   }
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     bottom: 7px;
   }
 }
@@ -193,7 +205,7 @@
   border: 2px solid $color-default-white;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding: 26px 49px 24px;
   }
 }

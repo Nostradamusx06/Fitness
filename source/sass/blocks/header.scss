@@ -13,9 +13,14 @@
     padding: 15px 31px 0 45px;
   }
 
+  @media(min-width: 769px) {
+    max-width: 692px;
+  }
+
   @media(min-width: $desktop-width) {
-    max-width: 1336px;
+    max-width: 1161px;
     min-height: 101px;
+    margin: 0 auto;
     padding: 15px 102px 0 103px;
   }
 }
@@ -87,10 +92,15 @@
     line-height: $font-line-size-lion;
   }
 
+  @media(min-width: 769px) {
+    padding-right: 13px;
+  }
+
   @media(min-width: $desktop-width) {
     font-size: $font-line-size-hippo;
     line-height: $font-line-size-hippo;
 
     margin: 0;
+    padding: 0;
   }
 }

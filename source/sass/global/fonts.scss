@@ -2,6 +2,16 @@
 
 @font-face {
   font-style: normal;
+  font-weight: $regular;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src:
+    url("../fonts/AlumniSans-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/AlumniSans-VariableFont_wght.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: $semi-bold;
   font-family: "Alumni Sans";
   font-display: swap;
@@ -21,6 +31,25 @@
 }
 
 // Font Roboto
+@font-face {
+  font-style: normal;
+  font-weight: $extra-light;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src:
+    url("../fonts/RobotoCondensed-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-VariableFont_wght.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: $light;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src:
+    url("../fonts/RobotoCondensed-VariableFont_wght.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-VariableFont_wght.woff") format("woff");
+}
 
 @font-face {
   font-style: normal;

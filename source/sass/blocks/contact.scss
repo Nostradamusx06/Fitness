@@ -1,17 +1,21 @@
 .contact {
+  max-width: 290px;
+  margin: 0 auto;
   padding: 36px 15px 40px;
 
   color: $color-sapphire;
   background-color: $color-default-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
+    max-width: none;
+    margin: 0;
     padding: 60px;
     padding-bottom: 59px;
 
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding: 59px 0 60px 103px;
 
     border-top: 1px solid #74819c;
@@ -27,22 +31,27 @@
   margin: 0;
   margin-bottom: 38px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
+    max-width: 768px;
+    margin: 0 auto;
     margin-bottom: 36px;
-    padding-left: 241px;
+
+    text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-
+  @media(min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 36px;
     text-align: left;
   }
 }
 
 .contact__list {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -54,7 +63,7 @@
 
   row-gap: 28px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     flex-direction: row;
 
     max-width: 440px;
@@ -62,35 +71,26 @@
 
     gap: 15px 81px;
 
-    &::after {
+    &:after {
       position: absolute;
-      right: 382.5px;
+      top: 0;
+      right: 50%;
+      left: 50%;
 
       width: 1px;
       height: 117px;
 
       content: "";
-      transform: translate(-50%);
 
       background-color: $color-light-slate-grey;
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     max-width: 477px;
     margin: 0;
 
     gap: 14px 129px;
-
-    &::after {
-      right: 340px;
-    }
-  }
-
-  @media (width >= 1440px) {
-    &::after {
-      right: 26%;
-    }
   }
 }
 
@@ -111,7 +111,7 @@
     order: 3;
   }
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     &--phone {
       order: 1;
     }
@@ -125,7 +125,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     &--email {
       padding-left: 14px;
     }
@@ -140,14 +140,14 @@
   margin: 0;
   margin-bottom: 12px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-lion;
     line-height: $font-line-size-lion;
 
     margin-bottom: 7px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     margin-bottom: 6px;
   }
 }
@@ -161,7 +161,7 @@
 
   color: $color-sapphire;
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     line-height: $font-line-size-bear;
   }
 

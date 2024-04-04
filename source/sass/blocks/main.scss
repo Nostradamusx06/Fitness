@@ -4,6 +4,7 @@
   padding-bottom: 32px;
 
   @media(min-width: $tablet-width) {
+    max-width: 678px;
     display: flex;
     justify-content: center;
 
@@ -12,7 +13,7 @@
   }
 
   @media(min-width: $desktop-width) {
-    width: 1003px;
+    max-width: 1003px;
     padding: 0;
     padding-bottom: 120px;
     padding-left: 13px;
@@ -83,9 +84,9 @@
   font-weight: $bold;
   line-height: $font-line-size-mouse;
 
-  width: 275px;
+  width: 272px;
   margin: 0 auto;
-  padding: 22px 7px 22px 4px;
+  padding: 22px 7px 22px 7px;
 
   cursor: pointer;
   user-select: none;
@@ -177,9 +178,11 @@
   @media(min-width: $tablet-width) {
     margin: 0;
     margin-top: 5px;
+    margin-left: 1px;
   }
 
   @media(min-width: $desktop-width) {
+    margin: 0;
     margin-top: 25px;
     margin-bottom: 51px;
   }
@@ -188,7 +191,7 @@
 .main__list-item {
   font-family: $roboto;
   font-size: $font-line-size-rabbit;
-  font-weight: $regular;
+  font-weight: $light;
   line-height: $font-line-size-deer;
 
   text-align: end;

@@ -73,9 +73,9 @@
           <p class="gym__description">Просторный зал площадью 900&nbsp;кв/м</p>
           <div class="gym__text">
             <p>
-              Supergym&nbsp;&mdash;&hairsp;самый большой фитнес центр за&nbsp;Уралом
+              Supergym&nbsp;&ndash;&nbsp;самый большой фитнес центр за&nbsp;Уралом
               и&nbsp;идеальное место для укрепления тела
-              и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+              и&nbsp;здоровья. Тренажёрный зал оснащён всем необходимым
               современным оборудованием для&nbsp;всех спортсменов.
             </p>
             <p>
@@ -88,22 +88,31 @@
         </div>
         <p class="gym__content-picture">
           <picture>
+            <source type="image/webp" media="(min-width: 1366px)" width="660" height="400"
+              srcset="img/gym/gym-desktop@1x.webp 1x, img/gym/gym-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" width="678" height="345"
               srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 320px)" width="320" height="280"
               srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
 
-            <source type="image/jpg" media="(min-width:768px)"
+            <source type="image/jpg" media="(min-width: 1366px)"
+              srcset="img/gym/gym-desktop@1x.jpg 1x, img/gym/gym-desktop@2x.jpg 2x" width="660" height="400">
+            <source type="image/jpg" media="(min-width: 768px)"
               srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
             <img class="gym__img" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320"
-              height="280" alt="Тренажерный зал" loading="lazy">
+              height="280" alt="Тренажёрный зал" loading="lazy">
           </picture>
         </p>
         <div class="video">
           <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
             <picture>
-              <source type="image/webp"
+              <source type="image/webp" media="(min-width: 1366px)" width="360" height="230"
                 srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="270" height="170"
+                srcset="img/gym/video/video-tablet@1x.webp 1x, img/gym/video/video-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" width="320" height="170"
+                srcset="img/gym/video/video-mobile@1x.webp 1x, img/gym/video/video-mobile@2x.webp 2x">
+
 
               <img class="video__media" srcset="img/gym/video/video-mobile@2x.jpg 2x"
                 src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" alt="Видео спортивного зала"

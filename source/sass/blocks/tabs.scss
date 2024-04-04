@@ -10,24 +10,25 @@
 
   border-bottom: 1px solid rgba(120, 120, 120, 0.2);
 
-  column-gap: 45px;
+  column-gap: 46px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-bottom: 6px;
 
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
-    column-gap: 46px;
+    column-gap: 44px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-bottom: 8px;
 
-    column-gap: 54px;
+    column-gap: 51px;
   }
 }
 
 .tabs__button {
+  font-family: $roboto;
   font-size: $font-line-size-fox;
   font-weight: $regular;
   line-height: $font-line-size-fox;
@@ -45,12 +46,12 @@
   outline: none;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-wolf;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-deer;
     line-height: $font-line-size-deer;
   }
@@ -65,21 +66,22 @@
       right: 2px;
       bottom: -19px;
 
-      width: 105%;
+      width: 100%;
       height: 1px;
 
       content: "";
 
       background-color: $color-border-grey;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
+        right: 0;
         bottom: -10px;
       }
     }
@@ -94,21 +96,22 @@
       right: 2px;
       bottom: -19px;
 
-      width: 105%;
+      width: 100%;
       height: 1px;
 
       content: "";
 
       background-color: $color-sapphire;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
+        right: 0;
         bottom: -10px;
       }
     }
@@ -125,7 +128,7 @@
       right: 2px;
       bottom: -19px;
 
-      width: 105%;
+      width: 100%;
       height: 1px;
 
       content: "";
@@ -133,14 +136,15 @@
       opacity: 0.3;
       background-color: $color-sapphire;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
+        right: 0;
         bottom: -10px;
       }
     }
@@ -156,21 +160,22 @@
     right: 2px;
     bottom: -19px;
 
-    width: 105%;
+    width: 100%;
     height: 1px;
 
     content: "";
 
     background-color: $color-crimson;
 
-    @media (min-width: $tablet-width) {
+    @media(min-width: $tablet-width) {
       right: -1px;
       bottom: -8px;
 
       height: 2px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
+      right: 0;
       bottom: -10px;
     }
   }
