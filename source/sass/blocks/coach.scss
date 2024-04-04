@@ -3,23 +3,23 @@
 
   padding-bottom: 40px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 60px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding: 134px 103px 100px;
   }
 }
 
 .coach__container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 767px;
     margin: 0 auto;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 1160px;
   }
 }
@@ -36,7 +36,7 @@
 
   color: $color-sapphire;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
@@ -44,7 +44,7 @@
     margin-bottom: 46px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 46px;
 
     text-align: left;
@@ -66,11 +66,11 @@
 .coach__slider.swiper {
   width: 226px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 560px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1160px;
   }
 }
@@ -98,7 +98,7 @@
     opacity: 1;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     &:hover .coach__description-wrapper {
       background-color: $coach-item-shadow;
     }
@@ -125,7 +125,7 @@
 
   transform: translate(-50%, -50%);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 88%;
   }
 
@@ -141,7 +141,7 @@
 .coach__photo {
   height: 280px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 260px;
     height: 300px;
   }
@@ -151,11 +151,11 @@
   width: 100%;
   height: 100%;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     object-fit: cover;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     object-fit: none;
   }
 }
@@ -167,7 +167,7 @@
   outline: none;
   background-color: transparent;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
 
     display: block;
@@ -189,12 +189,12 @@
 }
 
 .coach__button.swiper-button-prev {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: 140px;
     left: 20px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     bottom: 143px;
     left: -81px;
   }
@@ -223,12 +223,12 @@
 
   transform: rotate(180deg);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 140px;
     right: 20px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 137px;
     right: -81px;
   }
