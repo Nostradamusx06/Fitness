@@ -18,7 +18,7 @@
   @media (min-width: $desktop-width) {
     padding: 59px 0 60px 103px;
 
-    border-top: 1px solid #74819c;
+    border-top: 1px solid $color-light-slate-grey;
   }
 }
 
@@ -35,7 +35,7 @@
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
-    max-width: 768px;
+    max-width: $tablet-width;
     margin: 0 auto;
     margin-bottom: 36px;
 

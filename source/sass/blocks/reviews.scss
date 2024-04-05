@@ -48,7 +48,7 @@
 .reviews__slider {
   font-family: $roboto;
 
-  max-width: 320px;
+  max-width: $mobile-width;
 
   background-color: $color-resolution-blue;
   box-shadow: $reviews-shadow-blue;

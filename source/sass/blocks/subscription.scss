@@ -143,12 +143,15 @@
 
   &:hover {
     border-image: $border-gradient;
+  }
 
-    .subscription__item-link {
-      color: $color-default-white;
-      border: none;
-      background: $button-gradient;
-    }
+  &:hover+.subscription__item-link {
+
+
+    color: $color-default-white;
+    border: none;
+    background: $button-gradient;
+
   }
 
   @media (min-width: $tablet-width) {

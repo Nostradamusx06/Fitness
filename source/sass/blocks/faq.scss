@@ -5,7 +5,7 @@
 .faq__container {
   font-family: $roboto;
 
-  max-width: 320px;
+  max-width: $mobile-width;
   margin: 0 auto;
   padding: 70px 15px 71px;
 
@@ -147,6 +147,7 @@
   &:hover {
     color: $color-sapphire;
     border: 1px solid $color-sapphire;
+    background-color: transparent;
   }
 
   &:focus {
@@ -440,7 +441,7 @@
     background-image: url("../img/sprite/faq-hover.svg");
   }
 
-  &:focus::after {
+  &:focus-within::after {
     background-image: url("../img/sprite/faq-focus.svg");
   }
 

@@ -36,8 +36,7 @@
   line-height: $font-line-size-giraffe;
 
   margin: 0 auto;
-  width: 320px;
-  padding-left: 30px;
+  width: $mobile-width;
   margin-bottom: 36px;
 
   color: $color-default-white;
@@ -46,7 +45,6 @@
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
     margin: 0;
-    padding: 0;
     width: auto;
     margin-bottom: 32px;
 

@@ -11,7 +11,7 @@
 }
 
 .gym__wrapper {
-  width: 320px;
+  width: $mobile-width;
   padding: 0;
   padding-bottom: 40px;
 
@@ -172,7 +172,7 @@
 }
 
 .gym__content-picture {
-  width: 320px;
+  width: $mobile-width;
   height: 280px;
   margin: 0;
 
