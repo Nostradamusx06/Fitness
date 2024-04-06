@@ -1,10 +1,10 @@
 .coach-description {
-  overflow: auto;
+  overflow: scroll;
 
   transition: background-color 0.3s ease;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-top: 45px;
   }
 }
@@ -25,7 +25,7 @@
 
   opacity: 0;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     margin-top: 0;
   }
 }
@@ -37,6 +37,7 @@
 
   display: inline-block;
 
+  max-width: 210px;
   margin: 0;
   margin-bottom: 33px;
 
@@ -46,6 +47,8 @@
 
   opacity: 0;
   color: $color-spindle;
+
+  overflow-wrap: break-word;
 }
 
 .coach-description__list {
@@ -68,7 +71,7 @@
   margin-bottom: 12px;
   padding-left: 42px;
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-left: 37px;
   }
 
@@ -89,7 +92,7 @@
     border-radius: 10px;
     background-color: $color-default-white;
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       left: 21px;
     }
   }

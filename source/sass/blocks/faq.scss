@@ -14,7 +14,7 @@
     padding: 61px 45px 58px;
   }
 
-  @media (width >= 769px) {
+  @media (width >=769px) {
     max-width: 678px;
   }
 
@@ -32,7 +32,8 @@
 
   margin: 0;
   margin-bottom: 34px;
-
+  max-width: 290px;
+  overflow-wrap: break-word;
   text-align: center;
 
   color: $color-sapphire;
@@ -41,6 +42,7 @@
     font-size: $font-line-size-whale-shark;
     line-height: $font-line-size-whale-shark;
     margin-bottom: 44px;
+    max-width: 678px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,12 +71,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 
   margin: 0;
   padding: 0;
   padding-bottom: 36px;
-
+  min-height: 46px;
   list-style: none;
 
   gap: 10px;
@@ -82,11 +83,11 @@
   @media (min-width: $tablet-width) {
     max-width: 678px;
     padding-bottom: 45px;
+    min-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    justify-content: start;
 
     max-width: 260px;
     padding: 0;
@@ -103,8 +104,8 @@
 
   min-width: 140px;
   max-width: 140px;
-  max-height: 46px;
-  padding: 15px 23px;
+  min-height: 46px;
+  padding: 15px 23px 13px;
 
   color: $color-sapphire;
   border: 1px solid rgba(16, 38, 84, 0.2);
@@ -114,13 +115,12 @@
     line-height: $font-line-size-wolf;
 
     min-width: 162px;
-    max-height: 54px;
+    min-height: 54px;
     padding: 17px 34px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 260px;
-    max-height: none;
     padding: 21px 48px 15px;
   }
 
@@ -202,17 +202,19 @@
   display: flex;
   flex-direction: column;
   padding-top: 21px;
-
+  min-height: 59px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 36px 0 3px;
+    min-height: 47px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 860px;
     padding: 0;
     padding-top: 32px;
+    min-height: 50px;
   }
 
   &::before {
@@ -271,7 +273,7 @@
     font-size: $font-line-size-deer;
     font-weight: $regular;
     line-height: $font-line-size-deer;
-
+    overflow-wrap: break-word;
     max-width: 234px;
     margin: 0;
     padding: 0;

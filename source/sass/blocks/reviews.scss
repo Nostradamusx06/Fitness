@@ -5,12 +5,12 @@
   margin: 0 auto;
   padding: 41px 40px 24px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     max-width: 500px;
     padding: 61px 45px 44px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     max-width: 560px;
     padding: 100px 237px 84px;
   }
@@ -22,6 +22,7 @@
   font-weight: $semi-bold;
   line-height: $font-line-size-giraffe;
 
+  max-width: 240px;
   margin: 0;
   margin-bottom: 39px;
 
@@ -29,14 +30,18 @@
 
   color: $color-sapphire;
 
-  @media (min-width: $tablet-width) {
+  overflow-wrap: break-word;
+
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
+    max-width: 500px;
     margin-bottom: 34px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
+    max-width: 560px;
     margin-bottom: 75px;
   }
 }
@@ -53,17 +58,17 @@
   background-color: $color-resolution-blue;
   box-shadow: $reviews-shadow-blue;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     max-width: 560px;
   }
 }
 
 .reviews__content {
-  min-height: 328px;
+  min-height: 240px;
 
   color: $color-default-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     min-height: 242px;
   }
 }
@@ -75,7 +80,7 @@
 
   padding: 30px 25px 29px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     display: grid;
 
     padding: 23px 43px 41px 30px;
@@ -84,7 +89,7 @@
     gap: 0 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding: 55px 57px 60px 60px;
 
     grid-template-rows: none;
@@ -99,16 +104,26 @@
 
     display: inline-block;
 
+    max-width: 190px;
+
     text-align: center;
 
-    @media (min-width: $tablet-width) {
+    overflow-wrap: break-word;
+
+    @media(min-width: $tablet-width) {
       font-size: $font-line-size-fox;
       line-height: $font-line-size-lion;
+
+      max-width: 310px;
 
       text-align: left;
 
       grid-row: 2 span;
       grid-column: 2;
+    }
+
+    @media(min-width: $desktop-width) {
+      max-width: 333px;
     }
   }
 
@@ -117,20 +132,29 @@
     font-weight: $regular;
     line-height: $font-line-size-deer;
 
+    max-width: 190px;
     margin: 0;
     margin-bottom: 17px;
 
-    @media (min-width: $tablet-width) {
+    text-align: center;
+
+    overflow-wrap: break-word;
+
+    @media(min-width: $tablet-width) {
       font-size: $font-line-size-bear;
       line-height: $font-line-size-bear;
 
+      max-width: 310px;
       margin: 0;
+
+      text-align: left;
 
       grid-column: 2;
       grid-row: 1;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
+      max-width: 333px;
       margin-bottom: 19px;
       padding-top: 6px;
     }
@@ -141,11 +165,11 @@
   margin: 0;
   margin-bottom: 6px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-top: 66px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     margin: 0;
     padding: 0;
 
@@ -154,7 +178,7 @@
   }
 
   img {
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       margin: 0 0 1px;
     }
   }
@@ -167,7 +191,7 @@
   outline: none;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     position: absolute;
 
     display: block;
@@ -189,12 +213,12 @@
 }
 
 .reviews__button.swiper-button-prev {
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     top: 240px;
     left: -69px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     top: 328px;
     left: 156px;
   }
@@ -203,12 +227,12 @@
 .reviews__button.swiper-button-next {
   transform: rotate(180deg);
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     top: 268px;
     right: -69px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     top: 356px;
     right: 156px;
   }

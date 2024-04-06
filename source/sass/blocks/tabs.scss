@@ -12,7 +12,7 @@
 
   column-gap: 46px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-bottom: 6px;
 
     border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -20,7 +20,7 @@
     column-gap: 44px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-bottom: 8px;
 
     column-gap: 51px;
@@ -35,6 +35,9 @@
 
   position: relative;
 
+  min-width: 50px;
+  max-width: 77px;
+  min-height: 10px;
   padding: 0;
 
   cursor: pointer;
@@ -46,14 +49,16 @@
   outline: none;
   background-color: transparent;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-wolf;
+    max-width: 86px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-deer;
     line-height: $font-line-size-deer;
+    max-width: 98px;
   }
 
   &:hover {
@@ -73,14 +78,14 @@
 
       background-color: $color-border-grey;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         right: 0;
         bottom: -10px;
       }
@@ -103,14 +108,14 @@
 
       background-color: $color-sapphire;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         right: 0;
         bottom: -10px;
       }
@@ -136,14 +141,14 @@
       opacity: 0.3;
       background-color: $color-sapphire;
 
-      @media (min-width: $tablet-width) {
+      @media(min-width: $tablet-width) {
         right: -1px;
         bottom: -8px;
 
         height: 2px;
       }
 
-      @media (min-width: $desktop-width) {
+      @media(min-width: $desktop-width) {
         right: 0;
         bottom: -10px;
       }
@@ -167,14 +172,14 @@
 
     background-color: $color-crimson;
 
-    @media (min-width: $tablet-width) {
+    @media(min-width: $tablet-width) {
       right: -1px;
       bottom: -8px;
 
       height: 2px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width: $desktop-width) {
       right: 0;
       bottom: -10px;
     }
