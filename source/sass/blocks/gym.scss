@@ -11,10 +11,12 @@
 }
 
 .gym__wrapper {
+  width: $mobile-width;
   padding: 0;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     padding-bottom: 50px;
 
     grid-template-columns: 1fr;
@@ -26,7 +28,7 @@
     display: grid;
 
     max-width: 1250px;
-    padding: 120px 44px 20px 91px;
+    padding: 120px 24px 20px 91px;
 
     grid-template-columns: 355px 1fr;
     column-gap: 157px;
@@ -34,7 +36,7 @@
 }
 
 .gym__content {
-  padding: 40px 15px 0;
+  padding: 41px 15px 0;
 
   @media (min-width: $tablet-width) {
     padding: 61px 15px 0;
@@ -48,15 +50,15 @@
 
 .gym__header {
   font-family: $alumni;
-  font-size: $font-line-size-elephant;
+  font-size: $font-line-size-giraffe;
   font-weight: $semi-bold;
   line-height: $font-line-size-giraffe;
 
   margin: 0;
-  margin-bottom: 12px;
-
+  margin-bottom: 11px;
+  min-width: 200px;
+  min-height: 20px;
   text-align: start;
-  letter-spacing: 0.03em;
 
   color: $color-sapphire;
 
@@ -67,7 +69,6 @@
     margin-bottom: 0;
 
     text-align: center;
-    letter-spacing: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,19 +77,17 @@
 
     margin-right: 35px;
     margin-bottom: 26px;
-
-    letter-spacing: 0;
   }
 }
 
 .gym__description {
   font-family: $roboto;
   font-size: $font-line-size-wolf;
-  font-weight: $light;
   line-height: $font-line-size-deer;
 
   margin: 0;
-
+  min-width: 200px;
+  min-height: 15px;
   text-align: start;
 
   color: $color-sapphire;
@@ -104,24 +103,25 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: $font-line-size-bear;
+    line-height: $font-line-size-bear;
+
     display: flex;
 
     margin-left: 12px;
     padding: 0;
-
-    letter-spacing: 0.06em;
   }
 }
 
 .gym__text {
   font-family: $roboto;
-  font-weight: $light;
+  font-weight: $extra-light;
 
   margin-top: 36px;
 
   color: $color-sapphire;
 
-  @media (max-width: $mobile-width) {
+  @media (min-width: $mobile-width) {
     font-size: $font-line-size-rabbit;
     line-height: $font-line-size-bear;
   }
@@ -133,14 +133,14 @@
     margin-top: 35px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (width <=1365px) {
     p:not(:first-child) {
       display: none;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 95px;
+    margin-top: 94px;
     margin-left: 11px;
   }
 
@@ -148,14 +148,17 @@
 
   p {
     margin: 0;
+    margin-left: 1px;
+    min-height: 90px;
+    min-width: 200px;
 
     &:first-child {
       margin-bottom: 36px;
 
       @media (min-width: $tablet-width) {
-        width: 502px;
+        width: 475px;
         margin: 0 auto;
-        margin-bottom: 36px;
+        margin-bottom: 18px;
 
         text-align: center;
       }
@@ -163,7 +166,8 @@
       @media (min-width: $desktop-width) {
         width: inherit;
         margin: 0;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+        margin-left: 1px;
 
         text-align: left;
       }
@@ -172,7 +176,7 @@
 }
 
 .gym__content-picture {
-  width: 320px;
+  width: $mobile-width;
   height: 280px;
   margin: 0;
 
@@ -192,18 +196,5 @@
 }
 
 .gym__img {
-  width: 320px;
-  height: 280px;
-
   object-fit: cover;
-
-  @media (min-width: $tablet-width) {
-    width: 678px;
-    height: 345px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: initial;
-    height: initial;
-  }
 }

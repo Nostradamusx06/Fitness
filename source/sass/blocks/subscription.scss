@@ -5,14 +5,15 @@
 
   padding-top: 14px;
 
+  color: $color-sapphire;
   background-color: $color-ghost-white;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 20px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-height: 739px;
     padding: 55px 103px 0;
   }
@@ -28,22 +29,30 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (min-width: $tablet-width) {
-      bottom: -14px;
+    @media(min-width: $tablet-width) {
+      bottom: -20px;
       left: 443px;
 
       display: block;
 
-      width: 404px;
-      height: 404px;
+      width: 403px;
+      height: 409px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media(min-width:769px) {
+      left: 55vw;
+    }
+
+    @media(min-width: $desktop-width) {
       bottom: -44px;
       left: 1064px;
 
-      width: 328px;
+      width: 425px;
       height: 491px;
+    }
+
+    @media(width: 1380px) {
+      left: 72vw;
     }
   }
 }
@@ -54,18 +63,22 @@
   font-weight: $semi-bold;
   line-height: $font-line-size-giraffe;
 
+  min-width: 200px;
+  min-height: 20px;
   margin-bottom: 28px;
 
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  overflow-wrap: break-word;
+
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-whale-shark;
     line-height: $font-line-size-whale-shark;
 
     margin-bottom: 36px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-grampus;
     font-weight: $semi-bold;
     line-height: $font-line-size-grampus;
@@ -83,11 +96,11 @@
 .subscription__content {
   padding-top: 22px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     padding-top: 37px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding-top: 32px;
   }
 }
@@ -104,12 +117,12 @@
 
   gap: 35px;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     grid-template-columns: minmax(290px, 380px);
     gap: 42px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     grid-template-columns: repeat(3, auto);
     gap: 40px;
   }
@@ -123,8 +136,9 @@
   align-items: center;
   flex-direction: column;
 
-  min-width: 290px;
-  padding: 44px 69px 43px;
+  min-width: 276px;
+  min-height: 300px;
+  padding: 44px 0 43px;
 
   border: 7px solid $color-transparent;
   outline: none;
@@ -134,21 +148,21 @@
 
   &:hover {
     border-image: $border-gradient;
-
-    .subscription__item-link {
-      color: $color-default-white;
-      border: none;
-      background: $button-gradient;
-    }
   }
 
-  @media (min-width: $tablet-width) {
+  &:hover+.subscription__item-link {
+    color: $color-default-white;
+    border: none;
+    background: $button-gradient;
+  }
+
+  @media(min-width: $tablet-width) {
     min-width: 228px;
     max-width: 100%;
     padding: 56px 69px 57px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     min-width: 290px;
     max-width: 360px;
     min-height: 369px;
@@ -165,21 +179,28 @@
   font-weight: $bold;
   line-height: $font-line-size-bear;
 
+  min-width: 100px;
+  max-width: 125px;
+  min-height: 18px;
   margin: 0;
   margin-bottom: 18px;
 
-  @media (min-width: $tablet-width) {
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-lion;
     line-height: $font-line-size-lion;
 
+    max-width: 140px;
     margin-bottom: 21px;
     padding-top: 2px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     font-size: $font-line-size-hippo;
     line-height: $font-line-size-hippo;
 
+    max-width: 150px;
     margin-bottom: 17px;
     padding-top: 26px;
   }
@@ -190,11 +211,10 @@
   font-weight: $light;
   line-height: $font-line-size-bear;
 
+  max-width: 100px;
   margin: 0;
 
-  color: $color-sapphire;
-
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-lion;
   }
@@ -214,11 +234,11 @@
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     width: 244px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     width: 189px;
   }
 
@@ -263,14 +283,14 @@
 
   color: $color-egyptian-blue;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: 60px;
     line-height: 90px;
 
     padding: 84px 44px 21px 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     padding: 79px 44px 17px 0;
   }
 
@@ -288,7 +308,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media (min-width: $tablet-width) {
+    @media(min-width: $tablet-width) {
       top: 66%;
       right: -9%;
 
@@ -315,14 +335,14 @@
   opacity: 0.5;
   color: $color-grey;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     font-size: 100px;
     line-height: 150px;
 
     top: 51%;
   }
 
-  @media (min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     top: 50%;
   }
 }
