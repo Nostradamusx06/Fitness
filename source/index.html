@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="a fitness center page where you can see all the information you need to know">
   <meta name="keywords" content="fitness, exercise, gym">
-  <title>Fitness</title>
+  <title>SUPERGYM</title>
   <link rel="preload" href="fonts/AlumniSans-VariableFont_wght.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-VariableFont_wght.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="images/svg+xml" href="favicons/favicon.svg">
+  <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -24,7 +28,7 @@
               height="26">
             <source type="image/svg+xml" media="(min-width:768px)" srcset="img/logo/logo-tablet.svg" width="110"
               height="22">
-            <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип Drink2Go.">
+            <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип Фитнес центра Supergym">
           </picture>
         </p>
 
@@ -58,7 +62,7 @@
               srcset="img/hero/hero-tablet@1x.webp 1x, img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
 
             <source type="image/jpg" media="(min-width: 1366px)"
-              srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="500" height="524">
+              srcset="img/hero/hero-desktop@1x.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
             <img class="main__img" src="img/hero/hero-tablet@1x.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x" width="324"
               height="390" loading="lazy" alt="Портрет мужчины">
           </picture>
@@ -121,9 +125,9 @@
                 loading="lazy">
             </picture>
           </a>
-          <button class="video__button" type="button" aria-label="Запустить видео">
+          <button class="video__button" type="button">
             <svg class="video__button-img" width="100" height="100" viewBox="0 0 100 100" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play video">
               <circle class="video__button-border" opacity="0.2" cx="50" cy="50" r="49" stroke="#ED0233"
                 stroke-width="2" />
               <path class="video__button-center" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
@@ -137,16 +141,16 @@
       <h2 class="subscription__header">Абонементы</h2>
       <div class="subscription__wrapper tabs">
         <div class="tabs__buttons no-js">
-          <button class="tabs__button is-active" data-index="1" data-prices="5000,1700,2700" type="button"
-            aria-label="1 месяц">
+          <button class="tabs__button is-active" data-index="1" data-prices="5000,1700,2700" type="button">
+            <span class="visually-hidden">Переключить на первый таб:</span>
             1 месяц
           </button>
-          <button class="tabs__button" data-index="2" data-prices="30000,10200,16200" type="button"
-            aria-label="6 месяцев">
+          <button class="tabs__button" data-index="2" data-prices="30000,10200,16200" type="button">
+            <span class="visually-hidden">Переключить на второй таб:</span>
             6 месяцев
           </button>
-          <button class="tabs__button" data-index="3" data-prices="60000,20400,32400" type="button"
-            aria-label="12 месяцев">
+          <button class="tabs__button" data-index="3" data-prices="60000,20400,32400" type="button">
+            <span class="visually-hidden">Переключить на третий таб:</span>
             12 месяцев
           </button>
         </div>
@@ -158,21 +162,21 @@
                 <p class="subscription__item-description">12 занятий</p>
                 <span class="subscription__min-text">5000</span>
                 <span class="subscription__max-text">5000</span>
-                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+                <a class="subscription__item-link button" href="#">Купить абонемент</a>
               </li>
               <li class="subscription__item">
                 <h3 class="subscription__item-header">Дневной</h3>
                 <p class="subscription__item-description">с 8:00 до 17:00</p>
                 <span class="subscription__min-text">1700</span>
                 <span class="subscription__max-text">1700</span>
-                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+                <a class="subscription__item-link button" href="#">Купить абонемент</a>
               </li>
               <li class="subscription__item">
                 <h3 class="subscription__item-header">Полный день</h3>
                 <p class="subscription__item-description">с 8:00 до 22:00</p>
                 <span class="subscription__min-text">2700</span>
                 <span class="subscription__max-text">2700</span>
-                <a class="subscription__item-link button" href="#!">Купить абонемент</a>
+                <a class="subscription__item-link button" href="#">Купить абонемент</a>
               </li>
             </ul>
           </div>
@@ -232,7 +236,9 @@
         <h2 class="coach__header">Жюри</h2>
         <div class="coach__wrapper">
           <button class="coach__button coach__button--prev swiper-button-prev" type="button">&nbsp;
-            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+            <span class="visually-hidden">предыдущий слайд</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none" role="img"
+              aria-label="Previous slide">
               <circle class="coach__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
               <path class="coach__button-center" d="M35 13L19 29L35 45" stroke="#102654" />
             </svg>
@@ -479,7 +485,9 @@
           </div>
 
           <button class="coach__button coach__button--next swiper-button-next" type="button">&nbsp;
-            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+            <span class="visually-hidden">следующий слайд</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none" role="img"
+              aria-label="Next slide">
               <circle class="coach__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
               <path class="coach__button-center" d="M35 13L19 29L35 45" stroke="#102654" />
             </svg>
@@ -562,7 +570,7 @@
               <p>Год</p>
               <p>4999</p>
               <span>Безлимитный абонемент в&nbsp;тренажёрный зал</span>
-              <a class="discount__promo-link" href="#!">подробнее</a>
+              <a class="discount__promo-link" href="#">подробнее</a>
             </div>
             <p class="discount__picture">
               <picture>
@@ -590,13 +598,13 @@
             <div class="discount__info-container">
               <p>Месяц бесплатно</p>
               <span>Приведи друга, получи абонемент в&nbsp;подарок</span>
-              <a class="discount__info-link" href="#!">подробнее</a>
+              <a class="discount__info-link" href="#">подробнее</a>
             </div>
 
             <div class="discount__info-container">
               <p>Скидка&nbsp;20%</p>
               <span>Корпоративный фитнес с&nbsp;командой</span>
-              <a class="discount__info-link" href="#!">подробнее</a>
+              <a class="discount__info-link" href="#">подробнее</a>
             </div>
           </div>
         </div>
@@ -623,26 +631,38 @@
           </ul>
           <ul class="faq__accordion-list">
             <li class="faq__accordion-item">
-              <button type="button">Как стать членом фитнес-&#8288;центра?</button>
+              <button type="button">
+                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                Как стать членом фитнес-&#8288;центра?
+              </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
                 договор. При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн и договор придёт вам на
                 почту.
               </span>
             </li>
             <li class="faq__accordion-item">
-              <button type="button">Где можно посмотреть расписание?</button>
+              <button type="button">
+                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                Где можно посмотреть расписание?
+              </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
                 договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
               </span>
             </li>
             <li class="faq__accordion-item">
-              <button type="button">Есть кулеры в центре? Предоставляются полотенца?</button>
+              <button type="button">
+                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                Есть кулеры в центре? Предоставляются полотенца?
+              </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
                 договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
               </span>
             </li>
             <li class="faq__accordion-item">
-              <button type="button">Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</button>
+              <button type="button">
+                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                Сколько тренеров работает в клубе и какова их&nbsp;квалификация?
+              </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
                 договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
               </span>
@@ -654,9 +674,10 @@
 
     <section class="reviews" data-test="reviews">
       <div class="reviews__container">
-        <button class="reviews__button reviews__button--prev swiper-button-prev no-js" type="button"
-          aria-label="previous-slide">
-          <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+        <button class="reviews__button reviews__button--prev swiper-button-prev no-js" type="button">
+          <span class="visually-hidden">предыдущий слайд</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none" role="img"
+            aria-label="Previous slide">
             <circle class="reviews__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
             <path class="reviews__button-center" d="M35 13L19 29L35 45" stroke="#102654" />
           </svg>
@@ -797,9 +818,10 @@
           </ul>
         </div>
 
-        <button class="reviews__button reviews__button--next swiper-button-next no-js" type="button"
-          aria-label="next-slide">
-          <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+        <button class="reviews__button reviews__button--next swiper-button-next no-js" type="button">
+          <span class="visually-hidden">следующий слайд</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none" role="img"
+            aria-label="Next slide">
             <circle class="reviews__button-border" cx="29" cy="29" r="28" stroke="#102654" fill="none" />
             <path class="reviews__button-center" d="M35 13L19 29L35 45" stroke="#102654" />
           </svg>
@@ -828,7 +850,8 @@
                 </label>
               </div>
 
-              <button class="form__button button" type="submit" value="Отправить">Отправить</button>
+              <button class="form__button button" type="submit" value="Отправить" aria-label="Отправить форму">
+                Отправить</button>
             </form>
 
           </div>
@@ -876,8 +899,9 @@
         <picture>
           <source type="image/svg+xml" media="(min-width:1336px)" srcset="img/logo/logo-desktop.svg" width="130"
             height="26">
-          <source type="image/svg+xml" media="(min-width:768px)" srcset="img/logo/logo-tablet.svg" width="110" height="22">
-          <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип Drink2Go.">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="img/logo/logo-tablet.svg" width="110"
+            height="22">
+          <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип Фитнес центра Supergym">
         </picture>
       </p>
 

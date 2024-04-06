@@ -143,14 +143,13 @@
   border: 7px solid $color-transparent;
   outline: none;
   background-color: $color-default-white;
-
   overflow-wrap: break-word;
 
   &:hover {
     border-image: $border-gradient;
   }
 
-  &:hover+.subscription__item-link {
+  &:hover  .subscription__item-link {
     color: $color-default-white;
     border: none;
     background: $button-gradient;
@@ -230,6 +229,7 @@
 
   cursor: pointer;
   text-transform: uppercase;
+  transition: 0.3s ease-in-out;
 
   color: $color-sapphire;
   border: 2px solid $color-sapphire;

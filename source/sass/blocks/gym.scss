@@ -11,7 +11,7 @@
 }
 
 .gym__wrapper {
-  width: $mobile-width;
+  width: 320px;
   padding: 0;
   padding-bottom: 40px;
 
@@ -144,8 +144,6 @@
     margin-left: 11px;
   }
 
-  // По требованию в ТЗ - эту часть нужно стилизовать каскадом от родителя
-
   p {
     margin: 0;
     margin-left: 1px;
@@ -176,7 +174,7 @@
 }
 
 .gym__content-picture {
-  width: $mobile-width;
+  width: 320px;
   height: 280px;
   margin: 0;
 

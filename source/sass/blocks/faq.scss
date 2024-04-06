@@ -5,7 +5,7 @@
 .faq__container {
   font-family: $roboto;
 
-  max-width: $mobile-width;
+  max-width: 320px;
   margin: 0 auto;
   padding: 70px 15px 71px;
 
@@ -277,6 +277,7 @@
     max-width: 234px;
     margin: 0;
     padding: 0;
+    transition: 0.3s ease-in-out;
 
     cursor: pointer;
     text-align: left;
@@ -313,7 +314,7 @@
     margin: 0;
     padding-top: 19px;
 
-    transition: max-height 0.1s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     color: $color-sapphire;
 
@@ -415,10 +416,11 @@
 
     width: 30px;
     height: 30px;
+    transition: 0.3s ease-in-out;
 
     content: "";
 
-    background-image: url("../img/sprite/faq.svg");
+    background-image: url("../img/sprite/sprite.svg#faq");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -436,21 +438,45 @@
   }
 
   &--active::after {
-    background-image: url("../img/sprite/faq-active.svg");
+    background-image: url("../img/sprite/sprite.svg#faq-active-mobile");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/sprite/sprite.svg#faq-active");
+    }
   }
 
   &:hover::after {
-    background-image: url("../img/sprite/faq-hover.svg");
+    background-image: url("../img/sprite/sprite.svg#faq-hover-mobile");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/sprite/sprite.svg#faq-hover");
+    }
   }
 
   &:focus-within::after {
-    background-image: url("../img/sprite/faq-focus.svg");
+    background-image: url("../img/sprite/sprite.svg#faq-focus-mobile");
+
+    @media (min-width: $tablet-width) {
+      width: 42px;
+      height: 42px;
+      background-image: url("../img/sprite/sprite.svg#faq-focus");
+      top: 25px;
+      right: -1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+    }
   }
 
   &:disabled::after {
     pointer-events: none;
 
     opacity: 0.3;
-    background-image: url("../img/sprite/faq.svg");
+    background-image: url("../img/sprite/sprite.svg#faq-mobile");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/sprite/sprite.svg#faq");
+    }
   }
 }

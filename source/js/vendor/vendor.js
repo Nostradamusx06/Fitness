@@ -1,6 +1,5 @@
 import './swiper.js';
 
-
 (function () {
   const createSwiperCoach = () => {
     const coachSwiper = document.querySelector('.coach__slider');

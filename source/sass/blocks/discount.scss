@@ -21,7 +21,7 @@
   line-height: 38px;
 
   max-width: 320px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 36px;
   padding-top: 37px;
 
@@ -402,7 +402,7 @@
 }
 
 .discount__picture {
-  width: $mobile-width;
+  width: 320px;
   height: 360px;
   margin: 0;
 
@@ -420,7 +420,7 @@
 }
 
 .discount__picture-img {
-  width: $mobile-width;
+  width: 320px;
   height: 360px;
 
   object-fit: cover;

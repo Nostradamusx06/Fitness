@@ -6,9 +6,9 @@
 
   cursor: pointer;
   user-select: none;
-  transition: opacity 0.3s ease;
   text-decoration: none;
   word-break: break-word;
+  transition: 0.3s ease-in-out;
 
   color: $color-default-white;
   border: none;

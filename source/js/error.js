@@ -8,11 +8,11 @@
       event.preventDefault();
 
       if (inputField.validity.valueMissing) {
-        errorMessage.textContent = 'Текст ошибки';
+        errorMessage.textContent = 'Это поле обязательно для заполнения';
       } else if (inputField.validity.typeMismatch) {
-        errorMessage.textContent = 'Текст ошибки';
+        errorMessage.textContent = 'Неверный формат данных';
       } else {
-        errorMessage.textContent = 'Текст ошибки';
+        errorMessage.textContent = 'Некорректное значение';
       }
       errorMessage.classList.add('error-message--error');
     });
