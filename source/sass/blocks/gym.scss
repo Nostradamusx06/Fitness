@@ -115,9 +115,9 @@
 
 .gym__text {
   font-family: $roboto;
-  font-weight: $extra-light;
+  font-weight: $light;
 
-  margin-top: 36px;
+  margin-top: 37px;
 
   color: $color-sapphire;
 
@@ -146,12 +146,12 @@
 
   p {
     margin: 0;
-    margin-left: 1px;
     min-height: 90px;
     min-width: 200px;
+    margin-left: 1px;
 
     &:first-child {
-      margin-bottom: 36px;
+      margin-bottom: 35px;
 
       @media (min-width: $tablet-width) {
         width: 475px;
