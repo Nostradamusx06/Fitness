@@ -14,7 +14,7 @@
     padding: 61px 45px 58px;
   }
 
-  @media (width >= 769px) {
+  @media (min-width: 769px) {
     max-width: 678px;
   }
 
@@ -105,7 +105,7 @@
   min-width: 140px;
   max-width: 140px;
   min-height: 46px;
-  padding: 15px 23px 13px;
+  padding: 14px 23px;
 
   color: $color-sapphire;
   border: 1px solid rgba(16, 38, 84, 0.2);
