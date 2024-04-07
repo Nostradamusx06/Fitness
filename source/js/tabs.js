@@ -4,8 +4,8 @@
 
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
-      buttons.forEach((item) => item.classList.remove('tabs__buton--active'));
-      button.classList.add('tabs__buton--active');
+      buttons.forEach((item) => item.classList.remove('tabs__button--active'));
+      button.classList.add('tabs__button--active');
 
       const priceData = button.dataset.prices.split(',');
 

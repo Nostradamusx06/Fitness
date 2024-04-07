@@ -1,6 +1,6 @@
 .form {
   max-width: 100%;
-  padding: 71px 15px;
+  padding: 71px 15px 70px;
   min-height: 130px;
 
   @media (min-width: $tablet-width) {
@@ -158,22 +158,22 @@
       margin-bottom: 35px;
     }
   }
+}
 
-  &--disabled {
-    pointer-events: none;
-    opacity: 0.4;
-    user-select: none;
+.form__input--disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  user-select: none;
 
-    &:focus {
-      padding: 0;
-      cursor: none;
-      border: none;
-      border-bottom: 2px solid $color-light-slate-grey;
+  &:focus {
+    padding: 0;
+    cursor: none;
+    border: none;
+    border-bottom: 2px solid $color-light-slate-grey;
 
-      &::placeholder {
-        color: $color-default-white;
-        opacity: 0.4;
-      }
+    &::placeholder {
+      color: $color-default-white;
+      opacity: 0.4;
     }
   }
 }

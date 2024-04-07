@@ -8,7 +8,7 @@
 
   background-color: $color-default-black;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 1120px;
     left: 249px;
@@ -19,11 +19,11 @@
     padding: 0;
   }
 
-  @media(min-width: 769px) {
+  @media (width >= 769px) {
     left: 41vw;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 520px;
     left: 683px;
@@ -80,12 +80,12 @@
     background: $color-link-water;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 52px;
     height: 52px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 72px;
     height: 72px;
   }
@@ -101,7 +101,7 @@
 
   transform: translate(-50%, -50%);
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
   }

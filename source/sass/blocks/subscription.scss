@@ -8,12 +8,12 @@
   color: $color-sapphire;
   background-color: $color-ghost-white;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 20px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 739px;
     padding: 55px 103px 0;
   }
@@ -25,11 +25,11 @@
 
     content: "";
 
-    background-image: image-set(url( "../img/subscription/disks@1x.webp") type( 'image/webp') 1x, url( "../img/subscription/disks@2x.webp") type( 'image/webp') 2x, url( "../img/subscription/disks@1x.png") 1x, url( "../img/subscription/disks@2x.png") 2x, );
+    background-image: image-set(url("../img/subscription/disks@1x.webp") type("image/webp") 1x, url("../img/subscription/disks@2x.webp") type("image/webp") 2x, url("../img/subscription/disks@1x.png") 1x, url("../img/subscription/disks@2x.png") 2x,);
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       bottom: -20px;
       left: 443px;
 
@@ -39,11 +39,11 @@
       height: 409px;
     }
 
-    @media(min-width: 769px) {
+    @media (width >= 769px) {
       left: 55vw;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       bottom: -44px;
       left: 1064px;
 
@@ -51,7 +51,7 @@
       height: 491px;
     }
 
-    @media(width: 1380px) {
+    @media (width <= 1380px) {
       left: 72vw;
     }
   }
@@ -71,14 +71,14 @@
 
   overflow-wrap: break-word;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-whale-shark;
     line-height: $font-line-size-whale-shark;
 
     margin-bottom: 36px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-grampus;
     font-weight: $semi-bold;
     line-height: $font-line-size-grampus;
@@ -96,11 +96,11 @@
 .subscription__content {
   padding-top: 22px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 37px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 32px;
   }
 }
@@ -117,12 +117,12 @@
 
   gap: 35px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: minmax(290px, 380px);
     gap: 42px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, auto);
     gap: 40px;
   }
@@ -160,13 +160,13 @@
     border-image: $border-gradient;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-width: 228px;
     max-width: 100%;
     padding: 56px 69px 57px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-width: 290px;
     max-width: 360px;
     min-height: 369px;
@@ -191,7 +191,7 @@
 
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-lion;
     line-height: $font-line-size-lion;
 
@@ -200,7 +200,7 @@
     padding-top: 2px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-hippo;
     line-height: $font-line-size-hippo;
 
@@ -218,7 +218,7 @@
   max-width: 100px;
   margin: 0;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-fox;
     line-height: $font-line-size-lion;
   }
@@ -237,13 +237,13 @@
   text-transform: uppercase;
 
   color: $color-sapphire;
-  border: 1px solid $color-sapphire;
+  border: 2px solid $color-sapphire;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 244px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 189px;
   }
 
@@ -255,7 +255,7 @@
 
   &:focus {
     color: $color-default-white;
-    border: 1px solid $color-default-black;
+    border: 2px solid $color-default-black;
     background: $tub-button-gradient;
   }
 
@@ -267,7 +267,7 @@
 }
 
 .subscription__item-link .button--disabled {
-  border: 1px solid $color-default-black;
+  border: 2px solid $color-default-black;
 }
 
 .subscription__min-text {
@@ -285,14 +285,14 @@
 
   color: $color-egyptian-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 90px;
 
     padding: 84px 44px 21px 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 79px 44px 17px 0;
   }
 
@@ -306,17 +306,17 @@
 
     content: "";
 
-    background-image: url("../img/sprite/sprite.svg#rouble");
+    background-image: url("../img/sprite/sprite.svg#rouble-mobile");
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 66%;
       right: -9%;
 
       width: 30px;
       height: 42px;
-
+      background-image: url("../img/sprite/sprite.svg#rouble-tablet");
       transform: translate(-50%, -50%);
     }
   }
@@ -337,14 +337,14 @@
   opacity: 0.5;
   color: $color-grey;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 100px;
     line-height: 150px;
 
     top: 51%;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 50%;
   }
 }

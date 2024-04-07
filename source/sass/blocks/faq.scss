@@ -14,7 +14,7 @@
     padding: 61px 45px 58px;
   }
 
-  @media (min-width:769px) {
+  @media (width >= 769px) {
     max-width: 678px;
   }
 
@@ -308,7 +308,7 @@
     }
   }
 
-  span {
+  p {
     font-size: $font-line-size-fox;
     font-weight: $light;
     line-height: $font-line-size-deer;
@@ -490,7 +490,6 @@
 .faq__accordion-item.faq__accordion-item--disabled::after {
   pointer-events: none;
   opacity: 0.3;
-
 }
 
 .faq__accordion-item.faq__accordion-item--disabled:hover::after,
@@ -498,8 +497,6 @@
   background-image: url("../img/sprite/sprite.svg#faq-mobile");
 
   @media (min-width: $tablet-width) {
-
     background-image: url("../img/sprite/sprite.svg#faq");
   }
-
 }
