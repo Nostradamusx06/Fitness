@@ -24,9 +24,14 @@
   };
 
   const setupVideo = (video) => {
-    const link = video.querySelector('.video__link');
     const media = video.querySelector('.video__media');
     const button = video.querySelector('.video__button');
+    const buttonIsDisabled = button.classList.contains('video__button--disabled');
+
+    if (buttonIsDisabled) {
+      return;
+    }
+
     const url = parseMediaURL(media);
     const embedUrl = generateURL(url);
 
@@ -34,11 +39,9 @@
       const iframe = createIframe(embedUrl);
       video.appendChild(iframe);
 
-      link.remove();
       button.remove();
     });
 
-    link.removeAttribute('href');
     video.classList.add('video--enabled');
   };
 

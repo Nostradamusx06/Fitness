@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="a fitness center page where you can see all the information you need to know">
   <meta name="keywords" content="fitness, exercise, gym">
-  <title>SUPERGYM</title>
-  <link rel="preload" href="fonts/AlumniSans-VariableFont_wght.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/alumni-sans/AlumniSans-VariableFont_wght.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-VariableFont_wght.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/roboto-condensed/RobotoCondensed-VariableFont_wght.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="images/svg+xml" href="favicons/favicon.svg">
   <link rel="apple-touch-icon" href="favicons/favicon-180.png">
   <link rel="manifest" href="manifest.json">
+  <title>SUPERGYM</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -64,7 +64,7 @@
             <source type="image/jpg" media="(min-width: 1366px)"
               srcset="img/hero/hero-desktop@1x.jpg 1x, img/hero/hero-desktop@2x.jpg 2x" width="500" height="524">
             <img class="main__img" src="img/hero/hero-tablet@1x.jpg" srcset="img/hero/hero-tablet@2x.jpg 2x" width="324"
-              height="390" loading="lazy" alt="Портрет мужчины">
+              height="390" alt="Портрет мужчины">
           </picture>
         </p>
       </div>
@@ -106,25 +106,23 @@
             <source type="image/jpg" media="(min-width: 768px)"
               srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x" width="678" height="345">
             <img class="gym__img" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320"
-              height="280" alt="Тренажёрный зал" loading="lazy">
+              height="280" alt="Тренажёрный зал">
           </picture>
         </p>
         <div class="video">
-          <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-            <picture>
-              <source type="image/webp" media="(min-width: 1366px)" width="360" height="230"
-                srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" width="270" height="170"
-                srcset="img/gym/video/video-tablet@1x.webp 1x, img/gym/video/video-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px)" width="320" height="170"
-                srcset="img/gym/video/video-mobile@1x.webp 1x, img/gym/video/video-mobile@2x.webp 2x">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" width="360" height="230"
+              srcset="img/gym/video/video-desktop@1x.webp 1x, img/gym/video/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" width="270" height="170"
+              srcset="img/gym/video/video-tablet@1x.webp 1x, img/gym/video/video-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" width="320" height="170"
+              srcset="img/gym/video/video-mobile@1x.webp 1x, img/gym/video/video-mobile@2x.webp 2x">
 
 
-              <img class="video__media" srcset="img/gym/video/video-mobile@2x.jpg 2x"
-                src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" alt="Видео спортивного зала"
-                loading="lazy">
-            </picture>
-          </a>
+            <img class="video__media" srcset="img/gym/video/video-mobile@2x.jpg 2x"
+              src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" alt="Видео спортивного зала"
+              loading="lazy">
+          </picture>
           <button class="video__button" type="button">
             <svg class="video__button-img" width="100" height="100" viewBox="0 0 100 100" fill="none"
               xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play video">
@@ -140,8 +138,8 @@
     <section class="subscription" id="subscriptions" data-test="price">
       <h2 class="subscription__header">Абонементы</h2>
       <div class="subscription__wrapper tabs">
-        <div class="tabs__buttons no-js">
-          <button class="tabs__button is-active" data-index="1" data-prices="5000,1700,2700" type="button">
+        <div class="tabs__buttons">
+          <button class="tabs__button tabs__buton--active" data-index="1" data-prices="5000,1700,2700" type="button">
             <span class="visually-hidden">Переключить на первый таб:</span>
             1 месяц
           </button>
@@ -223,7 +221,7 @@
             <source type="image/jpg" media="(min-width: 768px)" srcset="img/games/games-tablet@1x.jpg 1x,
             img/games/games-tablet@2x.jpg 2x" width="378" height="348">
             <img class="games__img" src="img/games/games-mobile@1x.jpg" srcset="img/games/games-mobile@2x.jpg 2x"
-              alt="Мужчина бьющий об пол рукой" width="290" height="290" loading="lazy">
+              alt="Мужчина бьющий об пол рукой" width="290" height="290">
           </picture>
         </p>
 
@@ -245,9 +243,9 @@
           </button>
 
           <div class="coach__slider swiper">
-            <ul class="coach__list swiper-wrapper">
+            <div class="coach__list swiper-wrapper">
 
-              <li class="coach__item swiper-slide" tabindex="0">
+              <li class="coach__item swiper-slide" tabindex="0" role="listitem">
                 <h3 class="coach__item-name">Анна Павлова</h3>
                 <div class="coach__photo">
                   <picture>
@@ -481,7 +479,7 @@
                 </div>
               </li>
 
-            </ul>
+            </div>
           </div>
 
           <button class="coach__button coach__button--next swiper-button-next" type="button">&nbsp;
@@ -586,8 +584,7 @@
                 <source type="image/jpg" media="(min-width: 768px)" srcset="img/discount/girl-tablet@1x.jpg 1x,
                 img/discount/girl-tablet@2x.jpg 2x" width="400" height="462">
                 <img class="discount__picture-img" src="img/discount/girl-mobile@1x.jpg"
-                  srcset="img/discount/girl-mobile@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне неба"
-                  loading="lazy">
+                  srcset="img/discount/girl-mobile@2x.jpg 2x" width="320" height="360" alt="Девушка на фоне неба">
               </picture>
             </p>
           </div>
@@ -617,7 +614,7 @@
         <div class="faq__wrapper">
           <ul class="faq__tabs-list">
             <li class="faq__item">
-              <button class="faq__item-button faq__item-button--active button" type="button">Центр</button>
+              <button class="faq__item-button button faq__item-button--active" type="button">Центр</button>
             </li>
             <li class="faq__item">
               <button class="faq__item-button button" type="button">Абонемент</button>
@@ -632,7 +629,7 @@
           <ul class="faq__accordion-list">
             <li class="faq__accordion-item">
               <button type="button">
-                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                <div class="visually-hidden">посмотреть или скрыть ответ на вопрос</div>
                 Как стать членом фитнес-&#8288;центра?
               </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
@@ -642,7 +639,7 @@
             </li>
             <li class="faq__accordion-item">
               <button type="button">
-                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                <div class="visually-hidden">посмотреть или скрыть ответ на вопрос</div>
                 Где можно посмотреть расписание?
               </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
@@ -651,7 +648,7 @@
             </li>
             <li class="faq__accordion-item">
               <button type="button">
-                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                <div class="visually-hidden">посмотреть или скрыть ответ на вопрос</div>
                 Есть кулеры в центре? Предоставляются полотенца?
               </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
@@ -660,7 +657,7 @@
             </li>
             <li class="faq__accordion-item">
               <button type="button">
-                <span class="visually-hidden">посмотреть или скрыть ответ на вопрос</span>
+                <div class="visually-hidden">посмотреть или скрыть ответ на вопрос</div>
                 Сколько тренеров работает в клубе и какова их&nbsp;квалификация?
               </button>
               <span>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
@@ -674,7 +671,7 @@
 
     <section class="reviews" data-test="reviews">
       <div class="reviews__container">
-        <button class="reviews__button reviews__button--prev swiper-button-prev no-js" type="button">
+        <button class="reviews__button reviews__button--prev swiper-button-prev" type="button">
           <span class="visually-hidden">предыдущий слайд</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none" role="img"
             aria-label="Previous slide">
@@ -684,7 +681,7 @@
         </button>
         <h2 class="reviews__header">Отзывы</h2>
         <div class="swiper reviews__slider">
-          <ul class="reviews__wrapper swiper-wrapper no-js">
+          <div class="reviews__wrapper swiper-wrapper">
             <li class="reviews__slide swiper-slide">
               <div class="reviews__content">
                 <div class="reviews__content-inner">
@@ -815,10 +812,10 @@
                 </div>
               </div>
             </li>
-          </ul>
+          </div>
         </div>
 
-        <button class="reviews__button reviews__button--next swiper-button-next no-js" type="button">
+        <button class="reviews__button reviews__button--next swiper-button-next" type="button">
           <span class="visually-hidden">следующий слайд</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none" role="img"
             aria-label="Next slide">
@@ -840,13 +837,13 @@
                 <label class="form__field">
                   <input class="form__input" id="form-input-first" type="text" name="user-name" placeholder="Имя"
                     pattern="^[a-zA-Zа-яА-Я\s]+$" required>&nbsp;
-                  <span class="error-message"></span>
+                  <span class="form__error-message"></span>
                 </label>
 
                 <label class="form__field">
                   <input class="form__input" id="form-input-second" type="tel" name="user-phone" placeholder="Телефон"
                     maxlength="18" pattern="\+?[0-9\s\-\(\)]+" required>&nbsp;
-                  <span class="error-message"></span>
+                  <span class="form__error-message"></span>
                 </label>
               </div>
 
@@ -957,11 +954,6 @@
     </div>
   </footer>
 
-  <script type="module" src="js/error.js"></script>
-  <script type="module" src="js/accordion.js"></script>
-  <script type="module" src="js/vendor/vendor.js"></script>
-  <script type="module" src="js/tabs.js"></script>
-  <script type="module" src="js/video.js"></script>
   <script type="module" src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>

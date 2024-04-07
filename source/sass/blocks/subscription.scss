@@ -25,9 +25,14 @@
 
     content: "";
 
-    background-image: url("../img/subscription/disks.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: image-set(
+        url("../img/subscription/disks@1x.webp") type('image/webp') 1x,
+        url("../img/subscription/disks@2x.webp") type('image/webp') 2x,
+        url("../img/subscription/disks@1x.png") 1x,
+        url("../img/subscription/disks@2x.png") 2x,
+      );
 
     @media(min-width: $tablet-width) {
       bottom: -20px;
@@ -39,7 +44,7 @@
       height: 409px;
     }
 
-    @media(min-width:769px) {
+    @media(min-width: 769px) {
       left: 55vw;
     }
 
@@ -143,16 +148,21 @@
   border: 7px solid $color-transparent;
   outline: none;
   background-color: $color-default-white;
+
   overflow-wrap: break-word;
 
   &:hover {
     border-image: $border-gradient;
   }
 
-  &:hover  .subscription__item-link {
+  &:hover .subscription__item-link {
     color: $color-default-white;
     border: none;
     background: $button-gradient;
+  }
+
+  &:focus-within {
+    border-image: $border-gradient;
   }
 
   @media(min-width: $tablet-width) {
@@ -228,8 +238,8 @@
   padding: 25px 1px;
 
   cursor: pointer;
+  transition: 0.2s ease-in-out;
   text-transform: uppercase;
-  transition: 0.3s ease-in-out;
 
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
@@ -304,7 +314,7 @@
 
     content: "";
 
-    background-image: url("../img/sprite/rouble.svg");
+    background-image: url("../img/sprite/sprite.svg#rouble");
     background-repeat: no-repeat;
     background-size: contain;
 

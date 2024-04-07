@@ -76,8 +76,8 @@
 
   @media(min-width: $desktop-width) {
     max-width: 625px;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
     padding-left: 4px;
 
     gap: 10px 63px;
@@ -186,6 +186,8 @@
   &:focus,
   &:active {
     .footer__icons-img {
+      transition: 0.3s ease-in-out;
+
       background-color: $color-light-slate-grey;
 
       fill: $color-default-white;
