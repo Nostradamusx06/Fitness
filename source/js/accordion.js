@@ -122,21 +122,22 @@
 
 
   const toggleAccordionItemState = (accordionItem, span, isOpened, tabIndex) => {
-    span.classList.toggle('faq__answer--active', isOpened);
-    accordionItem.classList.toggle('faq__accordion-item--active', isOpened);
+    if (!accordionItem.classList.contains('faq__accordion-item--disabled')) {
+      span.classList.toggle('faq__answer--active', isOpened);
+      accordionItem.classList.toggle('faq__accordion-item--active', isOpened);
 
-    const accordionItemIndex = Array.from(accordionItems).indexOf(accordionItem);
-    const openedItemsForTab = openedItems[tabIndex] || new Set();
+      const accordionItemIndex = Array.from(accordionItems).indexOf(accordionItem);
+      const openedItemsForTab = openedItems[tabIndex] || new Set();
 
-    if (isOpened) {
-      openedItemsForTab.add(accordionItemIndex);
-    } else {
-      openedItemsForTab.delete(accordionItemIndex);
+      if (isOpened) {
+        openedItemsForTab.add(accordionItemIndex);
+      } else {
+        openedItemsForTab.delete(accordionItemIndex);
+      }
+
+      openedItems[tabIndex] = openedItemsForTab;
     }
-
-    openedItems[tabIndex] = openedItemsForTab;
   };
-
 
   const updateAccordionData = (tabData, accordionItemsArray, tabIndex) => {
     tabData.items.forEach((item, itemIndex) => {

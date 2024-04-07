@@ -223,16 +223,25 @@
     border: 1px solid $color-default-white;
   }
 
-  &:disabled {
+  &--disabled {
     pointer-events: none;
 
     opacity: 0.5;
+
+    &:focus {
+      padding: 0;
+      padding-top: 28px;
+      padding-bottom: 5px;
+
+      border: none;
+      border-bottom: 1px solid $color-default-white;
+    }
   }
 
   @media(min-width: $tablet-width) {
     margin: 0;
-    margin-right: auto;
     margin-top: auto;
+    margin-right: auto;
   }
 }
 
@@ -394,10 +403,19 @@
     border: 1px solid $color-resolution-blue;
   }
 
-  &:disabled {
+  &--disabled {
     pointer-events: none;
 
-    opacity: 0.5;
+    opacity: 0.3;
+
+    &:focus {
+      padding: 0;
+      padding-top: 28px;
+      padding-bottom: 5px;
+
+      border: none;
+      border-bottom: 1px solid $color-light-slate-grey;
+    }
   }
 }
 

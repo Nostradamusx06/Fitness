@@ -124,6 +124,19 @@
     padding: 21px 48px 15px;
   }
 
+  &--disabled {
+    pointer-events: none;
+
+    opacity: 0.2;
+
+    &:focus {
+      color: $color-sapphire;
+      border: 1px solid $color-sapphire;
+
+      background: $color-default-white;
+    }
+  }
+
   &--active {
     color: $color-default-white;
     border: none;
@@ -136,12 +149,6 @@
     @media (min-width: $desktop-width) {
       padding: 21px 48px 15px;
     }
-  }
-
-  &:disabled {
-    pointer-events: none;
-
-    opacity: 0.2;
   }
 
   &:hover {
@@ -359,7 +366,8 @@
     }
   }
 
-  &:nth-child(2n)::after {
+  &:nth-child(2n)::after,
+  .faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
     top: 29px;
 
     @media (min-width: $tablet-width) {
@@ -371,7 +379,8 @@
     }
   }
 
-  &:nth-child(3n)::after {
+  &:nth-child(3n)::after,
+  .faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
     top: 37px;
 
     @media (min-width: $tablet-width) {
@@ -388,14 +397,16 @@
 
     border-bottom: 0;
 
-    &::after {
+    &::after,
+    .faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
       top: 35px;
     }
 
     @media (min-width: $tablet-width) {
       padding-top: 32px;
 
-      &::after {
+      &::after,
+      .faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
         top: 34px;
       }
     }
@@ -403,13 +414,15 @@
     @media (min-width: $desktop-width) {
       padding-top: 36px;
 
-      &::after {
+      &::after,
+      .faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
         top: 28px;
       }
     }
   }
 
-  &::after {
+  &::after,
+  .faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
     position: absolute;
     top: 25px;
     right: 0;
@@ -468,15 +481,25 @@
       top: 23px;
     }
   }
+}
 
-  &:disabled::after {
-    pointer-events: none;
+.faq__accordion-item.faq__accordion-item--disabled {
+  pointer-events: none;
+}
 
-    opacity: 0.3;
-    background-image: url("../img/sprite/sprite.svg#faq-mobile");
+.faq__accordion-item.faq__accordion-item--disabled::after {
+  pointer-events: none;
+  opacity: 0.3;
 
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/sprite/sprite.svg#faq");
-    }
+}
+
+.faq__accordion-item.faq__accordion-item--disabled:hover::after,
+.faq__accordion-item.faq__accordion-item--disabled:focus-within::after {
+  background-image: url("../img/sprite/sprite.svg#faq-mobile");
+
+  @media (min-width: $tablet-width) {
+
+    background-image: url("../img/sprite/sprite.svg#faq");
   }
+
 }

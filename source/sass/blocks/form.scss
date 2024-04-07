@@ -147,12 +147,6 @@
     }
   }
 
-  &:disabled {
-    pointer-events: none;
-
-    opacity: 0.5;
-  }
-
   &:invalid:not(:placeholder-shown) {
     margin-bottom: 17px;
     padding: 1px 0 4px;
@@ -162,6 +156,24 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 35px;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.4;
+    user-select: none;
+
+    &:focus {
+      padding: 0;
+      cursor: none;
+      border: none;
+      border-bottom: 2px solid $color-light-slate-grey;
+
+      &::placeholder {
+        color: $color-default-white;
+        opacity: 0.4;
+      }
     }
   }
 }

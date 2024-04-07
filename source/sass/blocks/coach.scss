@@ -185,7 +185,7 @@
     }
   }
 
-  &:disabled {
+  &--disabled {
     pointer-events: none;
 
     opacity: 0.3;
@@ -254,5 +254,13 @@
   &:active .coach__button-border {
     stroke: $color-sapphire;
     fill: $color-sapphire;
+  }
+}
+
+.coach__button--disabled.swiper-button-prev,
+.coach__button--disabled.swiper-button-next {
+  &:focus .coach__button-border {
+    fill: transparent;
+    stroke: transparent;
   }
 }

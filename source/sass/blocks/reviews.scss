@@ -204,6 +204,13 @@
     }
   }
 
+  &--disabled {
+    pointer-events: none;
+
+    opacity: 0.3;
+    color: $color-grey;
+  }
+
   &:disabled {
     pointer-events: none;
 
@@ -256,5 +263,14 @@
   &:active .reviews__button-border {
     stroke: $color-sapphire;
     fill: $color-sapphire;
+  }
+}
+
+
+.reviews__button--disabled.swiper-button-prev,
+.reviews__button--disabled.swiper-button-next {
+  &:focus .reviews__button-border {
+    fill: transparent;
+    stroke: transparent;
   }
 }

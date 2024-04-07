@@ -116,10 +116,14 @@
     border: 1px solid $color-default-white;
   }
 
-  &:disabled {
+  &--disabled {
     pointer-events: none;
 
     opacity: 0.4;
+
+    &:focus {
+      border: none;
+    }
   }
 }
 
@@ -182,6 +186,7 @@
 }
 
 .footer__icons-link {
+
   &:hover,
   &:focus,
   &:active {
@@ -210,13 +215,25 @@
     }
   }
 
-  &:disabled {
+  &--disabled {
     .footer__icons-img {
       pointer-events: none;
 
       background-color: $color-opacity-white;
 
       fill: $color-black-russian;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      .footer__icons-img {
+        pointer-events: none;
+
+        background-color: $color-opacity-white;
+
+        fill: $color-black-russian;
+      }
     }
   }
 }

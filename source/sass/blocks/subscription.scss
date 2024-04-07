@@ -25,14 +25,9 @@
 
     content: "";
 
+    background-image: image-set(url( "../img/subscription/disks@1x.webp") type( 'image/webp') 1x, url( "../img/subscription/disks@2x.webp") type( 'image/webp') 2x, url( "../img/subscription/disks@1x.png") 1x, url( "../img/subscription/disks@2x.png") 2x, );
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: image-set(
-        url("../img/subscription/disks@1x.webp") type('image/webp') 1x,
-        url("../img/subscription/disks@2x.webp") type('image/webp') 2x,
-        url("../img/subscription/disks@1x.png") 1x,
-        url("../img/subscription/disks@2x.png") 2x,
-      );
 
     @media(min-width: $tablet-width) {
       bottom: -20px;
@@ -242,7 +237,7 @@
   text-transform: uppercase;
 
   color: $color-sapphire;
-  border: 2px solid $color-sapphire;
+  border: 1px solid $color-sapphire;
 
   @media(min-width: $tablet-width) {
     width: 244px;
@@ -260,7 +255,7 @@
 
   &:focus {
     color: $color-default-white;
-    border: 2px solid $color-default-black;
+    border: 1px solid $color-default-black;
     background: $tub-button-gradient;
   }
 
@@ -269,13 +264,10 @@
     border: none;
     background: $button-gradient;
   }
+}
 
-  &:disabled {
-    pointer-events: none;
-
-    opacity: 0.3;
-    border: 2px solid $color-default-black;
-  }
+.subscription__item-link .button--disabled {
+  border: 1px solid $color-default-black;
 }
 
 .subscription__min-text {
