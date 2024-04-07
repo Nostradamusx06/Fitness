@@ -84,6 +84,12 @@
   overflow-wrap: break-word;
   grid-column: 1/-1;
 
+  &:nth-child(3n) {
+   .benefits__info-text span {
+      width: 230px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
 
@@ -218,7 +224,7 @@
 }
 
 .benefits__info-text {
-  max-width: 230px;
+  max-width: 228px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
@@ -260,7 +266,7 @@
 
     display: inline-block;
 
-    width: 230px;
+    width: 227px;
 
     @media (min-width: $tablet-width) {
       font-size: $font-line-size-fox;
@@ -281,8 +287,8 @@
   width: 100%;
   max-width: 100%;
   min-height: 155px;
-  margin: 4px auto 39px;
-  padding: 31px 0 40px;
+  margin: 5px auto 40px;
+  padding: 30px 0 39px;
 
   color: $color-default-white;
   background-color: $color-resolution-blue;
@@ -357,7 +363,7 @@
 
     width: auto;
     max-width: 200px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 
     @media (min-width: $tablet-width) {
       font-size: $font-line-size-earth;
@@ -377,7 +383,7 @@
     font-weight: $bold;
     line-height: $font-line-size-bear;
 
-    margin: -7px 0 7px;
+    margin: 0 7px;
 
     @media (min-width: $tablet-width) {
       font-size: $font-line-size-lion;
