@@ -1,5 +1,5 @@
-import './swiper.js';
-
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
 (function () {
   const createSwiperCoach = () => {
@@ -9,6 +9,7 @@ import './swiper.js';
     }
 
     const swiperForCoach = new Swiper(coachSwiper, {
+      modules: [Navigation],
       navigation: {
         nextEl: '.coach__button--next',
         prevEl: '.coach__button--prev',
@@ -44,7 +45,7 @@ import './swiper.js';
     }
 
     const swiperForReviews = new Swiper(reviewsSwiper, {
-
+      modules: [Navigation],
       navigation: {
         nextEl: '.reviews__button--next',
         prevEl: '.reviews__button--prev',

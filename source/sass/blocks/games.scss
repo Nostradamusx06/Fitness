@@ -1,19 +1,16 @@
 .games {
   font-family: $roboto;
 
-  min-height: 584px;
-  padding-bottom: 14px;
+  min-height: 524px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 292px;
     padding-top: 60px;
-    padding-bottom: 60px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 500px;
     padding-top: 100px;
-    padding-bottom: 66px;
   }
 }
 
@@ -23,16 +20,16 @@
   flex-direction: column;
 
   width: 100%;
-  padding: 25px 0;
+  padding-top: 25px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: center;
 
     padding: 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 1160px;
   }
 }
@@ -49,14 +46,14 @@
   color: $color-default-white;
   background-color: $color-red;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 300px;
     min-width: auto;
-    min-height: 266px;
-    padding-top: 41px;
+    min-height: 268px;
+    padding-top: 40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 436px;
     min-height: 381px;
     padding: 59px 0 60px 64px;
@@ -71,17 +68,18 @@
   width: 215px;
   padding-left: 40px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-lion;
 
     width: auto;
-    margin: 1px 0;
+    margin: 2px 0;
     margin-bottom: 10px;
     padding-left: 40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
     margin-bottom: 31px;
     padding-top: 23px;
     padding-left: 16px;
@@ -94,7 +92,7 @@
   font-weight: $bold;
   line-height: $font-line-size-mouse;
 
-  width: 65%;
+  width: 188px;
   margin-left: 40px;
   padding: 22px 9px;
 
@@ -103,19 +101,19 @@
 
   border: 2px solid $color-default-white;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-mouse;
     line-height: $font-line-size-mouse;
 
-    width: 65%;
+    width: 196px;
     padding: 25px 10px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-mouse;
     line-height: $font-line-size-mouse;
 
-    width: 65%;
+    width: 284px;
     margin-left: 16px;
     padding: 26px 26px 24px;
   }
@@ -124,11 +122,11 @@
 .games__date {
   display: flex;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     column-gap: 22px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     column-gap: 73px;
   }
 }
@@ -145,12 +143,12 @@
 
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
-    padding-left: 34px;
+    padding-left: 35px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 82px;
     line-height: 96px;
 
@@ -164,11 +162,11 @@
 .games__header-span {
   margin-left: 4px;
 
-  @media(min-width: $tablet-width) {
-    margin-left: 6px;
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 8px;
   }
 }
@@ -197,16 +195,14 @@
 
     background-color: $color-default-white;
 
-    @media(min-width: $tablet-width) {
-      top: -3px;
+    @media (min-width: $tablet-width) {
+      top: -4px;
       left: 0;
 
       width: 100px;
     }
 
-    @media(min-width: $desktop-width) {
-      top: -5px;
-
+    @media (min-width: $desktop-width) {
       width: 95px;
     }
   }
@@ -214,34 +210,33 @@
   &--line::before {
     width: 42px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: -4px;
 
       width: 100px;
     }
 
-    @media(min-width: $desktop-width) {
-      top: -5px;
-
+    @media (min-width: $desktop-width) {
       width: 95px;
     }
   }
 
-  @media(min-width: $tablet-width) {
-    margin-top: 4px;
+  @media (min-width: $tablet-width) {
+    line-height: $font-line-size-bear;
+    margin-top: 5px;
     margin-bottom: 9px;
     padding: 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
 
-    margin-top: 11px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 18px;
 
     &:last-child {
-      padding-top: 3px;
+      padding-top: 4px;
     }
   }
 }
@@ -256,7 +251,7 @@
   margin-bottom: 5px;
   padding-left: 56px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-lion;
 
@@ -264,7 +259,7 @@
     padding: 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
@@ -272,12 +267,13 @@
 .games__day {
   overflow-wrap: break-word;
   max-width: 28px;
-  @media(min-width: $tablet-width) {
-    margin-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
   }
 
-  @media(min-width: $desktop-width) {
-    margin-top: 4px;
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }
 
@@ -294,7 +290,7 @@
 
   vertical-align: baseline;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-rabbit;
     line-height: $font-line-size-bear;
 
@@ -302,12 +298,10 @@
     margin-left: 6px;
   }
 
-  @media(min-width: $desktop-width) {
-    font-size: $font-line-size-rabbit;
-    line-height: $font-line-size-bear;
+  @media (min-width: $desktop-width) {
+    line-height: $font-line-size-lion;
 
-    margin-top: 1px;
-    margin-left: 5px;
+    margin-left: 6px;
   }
 }
 
@@ -318,12 +312,12 @@
 
   background-color: $color-sapphire;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 378px;
     height: 348px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 660px;
     height: 500px;
   }
@@ -333,12 +327,12 @@
   width: 290px;
   height: 290px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 378px;
     height: 348px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 660px;
     height: 500px;
   }

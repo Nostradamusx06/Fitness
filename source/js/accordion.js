@@ -87,7 +87,7 @@
 
           {
             question: 'Можно ли приводить с собой детей на тренировки?',
-            answer: 'Нет, дети не могут присутствовать в тренажерном зале и на групповых занятиях. Для детей у нас есть специальная детская комната.'
+            answer: 'Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.'
           },
 
           {
@@ -110,8 +110,8 @@
 
   const resetAccordionToDefault = (accordionItemsArray) => {
     accordionItemsArray.forEach((item) => {
-      const span = item.querySelector('span');
-      span.classList.remove('faq__answer--active');
+      const p = item.querySelector('p');
+      p.classList.remove('faq__answer--active');
       item.classList.remove('faq__accordion-item--active');
     });
   };
@@ -121,34 +121,35 @@
   };
 
 
-  const toggleAccordionItemState = (accordionItem, span, isOpened, tabIndex) => {
-    span.classList.toggle('faq__answer--active', isOpened);
-    accordionItem.classList.toggle('faq__accordion-item--active', isOpened);
+  const toggleAccordionItemState = (accordionItem, p, isOpened, tabIndex) => {
+    if (!accordionItem.classList.contains('faq__accordion-item--disabled')) {
+      p.classList.toggle('faq__answer--active', isOpened);
+      accordionItem.classList.toggle('faq__accordion-item--active', isOpened);
 
-    const accordionItemIndex = Array.from(accordionItems).indexOf(accordionItem);
-    const openedItemsForTab = openedItems[tabIndex] || new Set();
+      const accordionItemIndex = Array.from(accordionItems).indexOf(accordionItem);
+      const openedItemsForTab = openedItems[tabIndex] || new Set();
 
-    if (isOpened) {
-      openedItemsForTab.add(accordionItemIndex);
-    } else {
-      openedItemsForTab.delete(accordionItemIndex);
+      if (isOpened) {
+        openedItemsForTab.add(accordionItemIndex);
+      } else {
+        openedItemsForTab.delete(accordionItemIndex);
+      }
+
+      openedItems[tabIndex] = openedItemsForTab;
     }
-
-    openedItems[tabIndex] = openedItemsForTab;
   };
-
 
   const updateAccordionData = (tabData, accordionItemsArray, tabIndex) => {
     tabData.items.forEach((item, itemIndex) => {
       const accordionItem = accordionItemsArray[itemIndex];
-      const span = accordionItem.querySelector('span');
+      const p = accordionItem.querySelector('p');
       const button = accordionItem.querySelector('button');
 
       button.textContent = item.question;
-      span.textContent = item.answer;
+      p.textContent = item.answer;
 
       const isOpened = (openedItems[tabIndex] || new Set()).has(itemIndex);
-      toggleAccordionItemState(accordionItem, span, isOpened, tabIndex);
+      toggleAccordionItemState(accordionItem, p, isOpened, tabIndex);
     });
   };
 
@@ -171,13 +172,13 @@
     const accordionItem = event.target.closest('.faq__accordion-item');
     if (accordionItem) {
       const tabIndex = Array.from(buttons).indexOf(document.querySelector('.faq__item-button--active'));
-      toggleAccordionItemState(accordionItem, accordionItem.querySelector('span'), !openedItems[tabIndex].has(Array.from(accordionItems).indexOf(accordionItem)), tabIndex);
+      toggleAccordionItemState(accordionItem, accordionItem.querySelector('p'), !openedItems[tabIndex].has(Array.from(accordionItems).indexOf(accordionItem)), tabIndex);
     }
   };
 
   const defaultItem = accordionItems[DEFAULT_INDEX];
-  const defaultItemSpan = defaultItem.querySelector('span');
-  toggleAccordionItemState(defaultItem, defaultItemSpan, true, DEFAULT_INDEX);
+  const defaultItemP = defaultItem.querySelector('p');
+  toggleAccordionItemState(defaultItem, defaultItemP, true, DEFAULT_INDEX);
   openedItems[DEFAULT_INDEX] = new Set([DEFAULT_INDEX]);
 
   const tabsList = document.querySelector('.faq__tabs-list');

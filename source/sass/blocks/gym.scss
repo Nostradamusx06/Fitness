@@ -11,7 +11,7 @@
 }
 
 .gym__wrapper {
-  width: $mobile-width;
+  width: 320px;
   padding: 0;
   padding-bottom: 40px;
 
@@ -115,9 +115,9 @@
 
 .gym__text {
   font-family: $roboto;
-  font-weight: $extra-light;
+  font-weight: $light;
 
-  margin-top: 36px;
+  margin-top: 37px;
 
   color: $color-sapphire;
 
@@ -133,7 +133,7 @@
     margin-top: 35px;
   }
 
-  @media (width <=1365px) {
+  @media (width <= 1365px) {
     p:not(:first-child) {
       display: none;
     }
@@ -144,16 +144,14 @@
     margin-left: 11px;
   }
 
-  // По требованию в ТЗ - эту часть нужно стилизовать каскадом от родителя
-
   p {
     margin: 0;
-    margin-left: 1px;
     min-height: 90px;
     min-width: 200px;
+    margin-left: 1px;
 
     &:first-child {
-      margin-bottom: 36px;
+      margin-bottom: 35px;
 
       @media (min-width: $tablet-width) {
         width: 475px;
@@ -176,7 +174,7 @@
 }
 
 .gym__content-picture {
-  width: $mobile-width;
+  width: 320px;
   height: 280px;
   margin: 0;
 

@@ -6,7 +6,7 @@
 
   cursor: pointer;
   user-select: none;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease-in-out;
   text-decoration: none;
   word-break: break-word;
 
@@ -14,12 +14,6 @@
   border: none;
   outline-offset: 3px;
   background-color: transparent;
-
-  &:disabled {
-    pointer-events: none;
-
-    opacity: 0.5;
-  }
 
   &:hover {
     color: $color-egyptian-blue;
@@ -37,5 +31,18 @@
     color: $color-sapphire;
     border: 2px solid $color-default-white;
     background-color: $color-default-white;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    opacity: 0.5;
+
+
+    &:focus {
+      color: $color-default-white;
+      background-color: transparent;
+      border: 2px solid $color-default-white;
+    }
   }
 }

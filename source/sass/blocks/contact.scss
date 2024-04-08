@@ -7,7 +7,7 @@
   color: $color-sapphire;
   background-color: $color-default-white;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: none;
     margin: 0;
     padding: 60px;
@@ -16,7 +16,7 @@
     border: none;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 59px 0 60px 103px;
 
     border-top: 1px solid $color-light-slate-grey;
@@ -35,7 +35,7 @@
 
   overflow-wrap: break-word;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
 
@@ -46,7 +46,7 @@
     text-align: center;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     margin-bottom: 36px;
 
@@ -68,7 +68,7 @@
 
   row-gap: 28px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
 
     max-width: 440px;
@@ -91,7 +91,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 477px;
     margin: 0;
 
@@ -116,7 +116,7 @@
     order: 3;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     &--phone {
       order: 1;
     }
@@ -130,7 +130,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     &--email {
       padding-left: 14px;
     }
@@ -148,7 +148,7 @@
 
   overflow-wrap: break-word;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-lion;
     line-height: $font-line-size-lion;
 
@@ -156,7 +156,7 @@
     margin-bottom: 7px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 6px;
     max-width: 170px;
   }
@@ -174,11 +174,11 @@
 
   overflow-wrap: break-word;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 170px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     line-height: $font-line-size-bear;
   }
 

@@ -1,15 +1,17 @@
 .coach {
   font-family: $roboto;
 
+  padding-top: 14px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 30px;
     padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 134px 103px 100px;
+    padding: 100px 103px;
   }
 }
 
@@ -34,17 +36,22 @@
   margin: 0 auto;
   margin-top: 27px;
   margin-bottom: 19px;
-  overflow-wrap: break-word;
+  padding-right: 1px;
+
   text-align: center;
 
   color: $color-sapphire;
 
+  overflow-wrap: break-word;
+
   @media (min-width: $tablet-width) {
     font-size: $font-line-size-grampus;
     line-height: $font-line-size-grampus;
+
     max-width: 560px;
     margin: 0 auto;
     margin-bottom: 46px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,7 +136,7 @@
   line-height: $font-line-size-bear;
 
   position: absolute;
-  top: 87%;
+  top: 245px;
   left: 50%;
 
   min-width: 128px;
@@ -192,7 +199,7 @@
     }
   }
 
-  &:disabled {
+  &--disabled {
     pointer-events: none;
 
     opacity: 0.3;
@@ -261,5 +268,13 @@
   &:active .coach__button-border {
     stroke: $color-sapphire;
     fill: $color-sapphire;
+  }
+}
+
+.coach__button--disabled.swiper-button-prev,
+.coach__button--disabled.swiper-button-next {
+  &:focus .coach__button-border {
+    fill: transparent;
+    stroke: transparent;
   }
 }

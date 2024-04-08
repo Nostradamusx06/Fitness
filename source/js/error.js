@@ -2,24 +2,24 @@
   const inputFields = document.querySelectorAll('.form__input');
 
   inputFields.forEach((inputField) => {
-    const errorMessage = inputField.parentNode.querySelector('.error-message');
+    const errorMessage = inputField.parentNode.querySelector('.form__error-message');
 
     inputField.addEventListener('invalid', (event) => {
       event.preventDefault();
 
       if (inputField.validity.valueMissing) {
-        errorMessage.textContent = 'Текст ошибки';
+        errorMessage.textContent = 'Это поле обязательно для заполнения';
       } else if (inputField.validity.typeMismatch) {
-        errorMessage.textContent = 'Текст ошибки';
+        errorMessage.textContent = 'Неверный формат данных';
       } else {
-        errorMessage.textContent = 'Текст ошибки';
+        errorMessage.textContent = 'Некорректное значение';
       }
-      errorMessage.classList.add('error-message--error');
+      errorMessage.classList.add('form__error-message--error');
     });
 
     inputField.addEventListener('input', () => {
       if (inputField.validity.valid) {
-        errorMessage.classList.remove('error-message--error');
+        errorMessage.classList.remove('form__error-message--error');
       }
     });
   });
