@@ -19,7 +19,7 @@
     padding: 0;
   }
 
-  @media (min-width: 769px) {
+  @media (width >= 769px) {
     left: 41vw;
   }
 
@@ -50,6 +50,10 @@
   border: none;
 
   object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    left: -0.3px;
+  }
 }
 
 .video__button {
