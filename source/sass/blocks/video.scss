@@ -19,7 +19,7 @@
     padding: 0;
   }
 
-  @media (width <= 769px) {
+  @media (min-width: 769px) {
     left: 41vw;
   }
 

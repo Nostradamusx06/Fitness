@@ -147,14 +147,6 @@
 
     border: 1px solid $color-default-white;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 7px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 20px;
-    }
-
     &::placeholder {
       color: transparent;
     }

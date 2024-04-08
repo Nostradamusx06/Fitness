@@ -14,7 +14,7 @@
     padding: 61px 45px 58px;
   }
 
-  @media (width >= 769px) {
+  @media (width >=769px) {
     max-width: 678px;
   }
 
@@ -92,8 +92,6 @@
     max-width: 260px;
     padding: 0;
     padding-top: 1px;
-
-    gap: 8px;
   }
 }
 
@@ -121,7 +119,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 260px;
-    padding: 21px 48px 15px;
+    padding: 19px 48px 12px;
   }
 
   &--disabled {

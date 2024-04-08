@@ -12,7 +12,7 @@
     padding: 15px 31px 0 45px;
   }
 
-  @media (width <= 769px) {
+  @media (min-width: 769px) {
     max-width: 692px;
   }
 
@@ -88,10 +88,6 @@
     font-size: $font-line-size-lion;
     line-height: $font-line-size-lion;
     padding: 15px 14px;
-  }
-
-  @media (width <= 769px) {
-    padding-right: 14px;
   }
 
   @media (min-width: $desktop-width) {
