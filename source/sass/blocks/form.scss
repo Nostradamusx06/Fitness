@@ -220,7 +220,7 @@
   line-height: $font-line-size-mouse;
 
   width: 100%;
-  padding: 22px 49px 22px;
+  padding: 22px 49px;
 
   text-align: center;
   vertical-align: middle;
@@ -231,6 +231,6 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 49px 25px;
+    padding: 25px 49px;
   }
 }
