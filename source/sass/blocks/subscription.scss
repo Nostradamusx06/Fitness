@@ -173,7 +173,7 @@
   &:hover .subscription__item-link {
     color: $color-default-white;
     border: none;
-    padding: 27px 0;
+    padding: 27px 1px;
     background: $button-gradient;
   }
 
@@ -252,9 +252,8 @@
 
   width: 189px;
   padding: 25px 1px;
-
+  transition: none;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
   text-transform: uppercase;
 
   color: $color-sapphire;
@@ -271,7 +270,7 @@
   &:hover {
     color: $color-default-white;
     border: none;
-    padding: 25px 0;
+    padding: 27px 1px;
     background: $button-gradient;
   }
 

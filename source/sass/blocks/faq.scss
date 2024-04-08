@@ -104,7 +104,7 @@
   max-width: 140px;
   min-height: 46px;
   padding: 13px 23px 14px;
-
+  transition: none;
   color: $color-sapphire;
   border: 1px solid rgba(16, 38, 84, 0.2);
 
@@ -139,14 +139,14 @@
     color: $color-default-white;
     border: none;
     background: $button-gradient;
-    padding: 14px 23px;
+    padding: 13px 23px;
 
     @media (min-width: $tablet-width) {
-      padding: 18px 34px;
+      padding: 17px 34px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 21px 48px 15px;
+      padding: 20px 48px 15px;
     }
   }
 
